@@ -1,0 +1,13 @@
+@font-face{
+    font-family: 'Grtsk Tera';
+    font-weight: 700;
+    font-style: normal;
+    src: local("Grtsk Tera"), url(./GrtskTera-Bold.woff);
+}
+
+@font-face{
+    font-family: 'Grtsk Tera';
+    font-weight: 600;
+    font-style: normal;
+    src: local("Grtsk Tera"), url(./GrtskTera-Semibold.woff);
+}
