@@ -323,3 +323,51 @@ new Swiper('.cards',{
 
     
 });
+
+/* 1 */
+
+
+document.querySelector('#plus1').onclick = function(){
+    document.querySelector('#info1').classList.toggle('answer-hide');
+    document.querySelector('#plus1').classList.toggle('close');
+    document.querySelector('#colorh').classList.toggle('color');
+}
+
+/* 2 */
+document.querySelector('#plus2').onclick = function(){
+    document.querySelector('#info2').classList.toggle('answer-hide');
+    document.querySelector('#plus2').classList.toggle('close');
+    document.querySelector('#colorh1').classList.toggle('color');
+}
+
+/* 3 */
+
+document.querySelector('#plus3').onclick = function(){
+    document.querySelector('#info3').classList.toggle('answer-hide');
+    document.querySelector('#plus3').classList.toggle('close');
+    document.querySelector('#colorh2').classList.toggle('color');
+}
+
+/* 4 */
+
+document.querySelector('#plus4').onclick = function(){
+    document.querySelector('#info4').classList.toggle('answer-hide');
+    document.querySelector('#plus4').classList.toggle('close');
+    document.querySelector('#colorh3').classList.toggle('color');
+}
+
+/* 5 */
+
+document.querySelector('#plus5').onclick = function(){
+    document.querySelector('#info5').classList.toggle('answer-hide');
+    document.querySelector('#plus5').classList.toggle('close');
+    document.querySelector('#colorh4').classList.toggle('color');
+}
+
+/* 6 */
+
+document.querySelector('#plus6').onclick = function(){
+    document.querySelector('#info6').classList.toggle('answer-hide');
+    document.querySelector('#plus6').classList.toggle('close');
+    document.querySelector('#colorh5').classList.toggle('color');
+}
