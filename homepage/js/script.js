@@ -253,3 +253,73 @@ new Swiper('.mygg',{
    },
 
 });
+
+/*  */
+
+new Swiper('.cards',{
+    //стрелки
+
+     mousewheel: {
+        sensitivity: 10,
+        //класс объекта на котором будет отрабатываться
+       /*  eventsTarget: ".image-slider"   */ 
+    }, 
+
+    // включение и отключение
+    // перетаскивания на pc
+    simulateTouch: false,
+    //чувствительность свайпа
+    touchRatio: 0.5,
+    //угол срабатывания свайпа
+    touchAngle: 45,
+    //курсор перетаскиваня
+    grabCursor: true,
+    //переключение на слайд при клике на него
+    slideToClickedSlide: true,
+
+    //управление клаваой
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true,
+    },
+
+    spaceBetween: 30,
+
+    //управление мышью
+  
+
+    //кол-во слайдов для показа 
+    slidesPerView: '1',
+
+    //speed
+    speed: 800,
+
+     //vertical
+    direction: 'vertical', 
+
+    effect: "cards",
+    cardsEffect: {
+        perSlideOffset: 10 , 
+
+        perSlideRotate: 0,
+/*         rotate:false, */
+       /*  slideShadows:false ,  */
+      },
+
+
+    //адаптивность
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        480: {
+            slidesPerView: 1,
+        },
+        992: {
+            slidesPerView: 1,
+        }
+    },
+
+    
+});

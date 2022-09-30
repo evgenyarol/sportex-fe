@@ -1010,3 +1010,267 @@ body{
     }
   }
  }
+
+ /* container-five */
+
+ .container-five{
+  margin-top: 200px;
+  margin-bottom: 200px;
+  @include onlylarge(1500px){
+    width: 95%;
+  }  
+  @include onlylarge(1024px){
+    margin-top: 137px;
+    margin-bottom: 140px;
+  }  
+   .txt{
+    display: flex;
+    justify-content: center;
+    h1{
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 120%;
+      color: #0A0A0B;
+      width: 641px; 
+      text-align: center;
+      @include onlylarge(700px){
+        font-size: 30px;
+      } 
+      
+      @include onlylarge(600px){
+        width: 250px;
+      }  
+
+      span{
+        @include onlylarge(1024px){
+          border-bottom: 4px solid #0A0A0B;
+          padding-bottom: 7px;
+        }   
+        @include onlylarge(600px){
+         padding-bottom: 3px;
+         border-bottom: 2px solid #0A0A0B;
+        }  
+      }
+    } 
+   }
+
+   .cards{
+    margin-top: 80px;
+    height: 580px; 
+    @include onlylarge(1024px){
+      height: 670px;
+      width: 600px; 
+      margin-top: 60px;
+    }  
+
+    @include onlylarge(700px){
+      width: 100%;
+    }  
+    
+    .cards-two{
+      .card-block{
+        border: 2px solid #0A0A0B;
+        border-radius: 50px 0px; 
+        display: grid;
+        grid-template-columns: 600px 686px;
+        column-gap: 55px;
+        padding-left: 51px; 
+        width: auto;
+        background-color: #FFFFFF;
+        @include onlylarge(1500px){
+          display: flex;
+          justify-content: space-between;
+        }  
+
+        @include onlylarge(1300px){
+          padding-left: 35px;
+        }  
+        @include onlylarge(1024px){
+          flex-direction: column;
+          padding-left: 0px;
+          justify-content: start;
+          width: 600px;
+        }  
+        @include onlylarge(700px){
+          width: 100%;
+        }  
+        .left-side{
+          padding-top: 50px;
+          @include onlylarge(1024px){
+            order: 2;
+            padding-left: 15px;
+            padding-top: 16px;
+            padding-right: 15px;
+          }  
+          h2{
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 140%;
+            color: #0A0A0B; 
+            @include onlylarge(1024px){
+              font-size: 25px;
+            }  
+          }
+          .descr-txt{
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 145%; 
+            color: #0A0A0B;
+            padding-top: 35px;
+            @include onlylarge(1500px){
+              width: 500px;
+            }  
+            @include onlylarge(1024px){
+              width: 100%;
+              padding-top: 10px;
+              font-size: 14px;
+            }  
+          }
+
+          .spisok{
+            padding-left: 23px;
+            padding-top: 50px;
+            @include onlylarge(1500px){
+              padding-top: 35px;
+            }  
+
+            @include onlylarge(1024px){
+             padding-top: 16px;
+            }   
+            .android{
+              list-style-type: disc;
+              li{
+                font-family: 'Montserrat';
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 205%; 
+                color: #0A0A0B;  
+                @include onlylarge(1024px){
+                  font-size: 14px;
+                 }     
+                           
+              }
+
+              li::marker{
+                width: 12px;
+                color: #0A34D2;
+                height: 12px;
+              }
+            }
+          }
+
+          .descr-txt-two{
+            font-family: 'Montserrat'; 
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 120%;
+            color: #0A0A0B; 
+            padding-top: 61px;
+            @include onlylarge(1500px){
+              padding-top: 32px;
+            }  
+            @include onlylarge(1024px){
+              padding-top:97px;
+            }  
+
+            @include onlylarge(463px){
+              padding-top:32px;
+            }  
+
+
+          }
+        }
+
+        .right-side{
+          height: 580px;
+          @include onlylarge(1024px){
+            order: 1;
+            height: 260px;
+            display: none;
+          }   
+          
+          img{
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }          
+        }
+
+        .right-side-mobile{
+          height: 260px;
+          display: none;
+          @include onlylarge(1024px){
+           display: block;
+          }   
+          
+          img{
+            max-width: 100%;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .card-block-two{
+        .left-side{
+          .descr-txt-two{
+            padding-top: 39px;
+            @include onlylarge(1500px){
+              padding-top: 16px;
+            }  
+
+            @include onlylarge(1024px){
+              padding-top: 106px;
+            }  
+            @include onlylarge(463px){
+              padding-top:32px;
+            }  
+          }
+
+          .spisok{
+            @include onlylarge(1500px){
+              padding-top: 13px;
+            }  
+          }
+        }
+      }
+
+      .card-block-three{
+        .left-side{
+          .descr-txt-two{
+            padding-top: 123px;
+            @include onlylarge(1024px){
+              padding-top: 146px;
+            }  
+
+            @include onlylarge(463px){
+              padding-top:106px;
+            }  
+          }
+        }
+      } 
+
+      .card-block-four{
+        .left-side{
+          .descr-txt-two{
+            padding-top: 151px;
+            @include onlylarge(1500px){
+              padding-top: 179px;
+            }  
+            @include onlylarge(1024px){
+              padding-top: 169px;
+            }  
+            @include onlylarge(463px){
+              padding-top:134px;
+            }  
+          }
+        }
+      } 
+    }
+   }
+ }
+
+ 
