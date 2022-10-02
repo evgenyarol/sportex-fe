@@ -269,9 +269,9 @@ new Swiper('.cards',{
     // перетаскивания на pc
     simulateTouch: false,
     //чувствительность свайпа
-    touchRatio: 0.5,
+    touchRatio: 3,
     //угол срабатывания свайпа
-    touchAngle: 45,
+    touchAngle: 90,
     //курсор перетаскиваня
     grabCursor: true,
     //переключение на слайд при клике на него
