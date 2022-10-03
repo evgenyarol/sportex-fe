@@ -237,7 +237,7 @@ body{
       /* display: none; */
       position: fixed;
       width: 100%;
-      z-index: 20;
+      z-index: 3;
       transition: 1s;
       top: 0;
       @include onlylarge(1600px){
