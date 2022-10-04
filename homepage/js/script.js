@@ -144,6 +144,7 @@ let header = document.querySelector('.js-header');
 
      headerHH = document.querySelector('.js-header-two').clientHeight;
 
+    
 document.onscroll = function () {
     let scroll = window.scrollY;
 
@@ -159,11 +160,26 @@ document.onscroll = function () {
 
 
     if (scroll > headerH + 1450 ) {
-        header.classList.remove('fixed');
+        header.classList.add('header-white');
+        document.body.style.paddingTop = headerH + 'px';
+    } else  {
+
+        header.classList.remove('header-white');
+        document.body.removeAttribute('style');
+
+    }
+
+    if (scroll > headerH + 5295 ) {
+        header.classList.remove('header-white');
         document.body.style.paddingTop = headerH + 'px';
     }
 
 
+   
+
+
+
+/*  */
     if (scroll > headerH + 5100 ) {
         header.classList.add('fixed');
         document.body.style.paddingTop = headerH + 'px';
@@ -203,6 +219,8 @@ document.onscroll = function () {
     
     
 }
+
+ 
 
 
 
@@ -252,22 +270,6 @@ document.querySelector('.menu-close').onclick = function(){
     document.querySelector('.navigation-one').classList.remove('active-one');
 }
 
-document.querySelector('.menu-fx-two').onclick = function(){
-    document.querySelector('.navigation-two').classList.add('active-three');
-}
-
-document.querySelector('.menu-close-black').onclick = function(){
-    document.querySelector('.navigation-two').classList.remove('active-three');
-}
-
-
-document.querySelector('.tell-menu').onclick = function(){
-    document.querySelector('.navigation-two').classList.remove('active-three');
-}
-
-document.querySelector('.tel-menu-four').onclick = function(){
-    document.querySelector('.navigation-one').classList.remove('active-one');
-}
 
 
 /*  */
@@ -317,13 +319,20 @@ new Swiper('.mygg',{
     //автопрокрутка
     autoplay: {
         //пауза между прокруткой
-        delay: 2000,
+        delay:100,
         //закончить на последнем слайдк
         stopOnLastSlide: true,
         //откл после ручного переключениея
         disableOnInteraction: false,
-        reverseDirection: true
+        reverseDirection: true,
+       
+        
     },
+
+
+    speed : 1000 ,
+
+    
 
 
    breakpoints: {
@@ -386,9 +395,12 @@ new Swiper('.cards',{
     //стрелки
 
      mousewheel: {
-        sensitivity: 10,
+         
         //класс объекта на котором будет отрабатываться
        /*  eventsTarget: ".image-slider"   */ 
+       forceToAxis: true,
+       sensitivity: 1,
+       releaseOnEdges: true,
     }, 
 
     // включение и отключение
@@ -446,7 +458,7 @@ new Swiper('.cards',{
     slidesPerView: '1',
 
     //speed
-    speed: 800,
+    speed: 1000,
 
      //vertical
     direction: 'vertical', 
@@ -457,6 +469,7 @@ new Swiper('.cards',{
 
         perSlideRotate: 0,
         rotate: false ,
+        
       },
 
 
@@ -531,3 +544,80 @@ document.querySelector('#plus6').onclick = function(){
 
 
 
+new Swiper('.ambs-one',{
+    //стрелки
+    navigation: {
+       nextEl:'.swiper-button-next',
+       prevEl:'.swiper-button-prev'
+       
+
+   },
+   slidesPerView: '1',
+   loop: true,
+    spaceBetween: 80,   
+   centeredSlides: true,
+   keyboard: {
+       enabled: true,
+       onlyInViewport: true,
+       pageUpDown: true,
+   },
+
+ /*   mousewheel: {
+       sensitivity: 1,
+       //класс объекта на котором будет отрабатываться
+      /*  eventsTarget: ".image-slider"  */ 
+
+
+
+      pagination: {
+        el: '.swiper-pagination',
+    
+        clickable: true,
+       
+        
+     }, 
+
+     
+    
+
+
+
+
+  /*   //автопрокрутка
+    autoplay: {
+        //пауза между прокруткой
+        delay: 2000,
+        //закончить на последнем слайдк
+        stopOnLastSlide: true,
+        //откл после ручного переключениея
+        disableOnInteraction: false,
+        reverseDirection: true
+    },
+ */
+
+    speed: 800 ,
+
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        480: {
+            slidesPerView: 1,
+            
+        },
+        992: {
+            slidesPerView: 1,
+        }
+    },
+
+});
+
+
+
+/*  */
+
+/*  */
+document.querySelector('.center-side').onclick = function(){
+    document.querySelector('.ifr').classList.add('openyoutube');
+    document.querySelector('.da').classList.add('close-butt');
+}
