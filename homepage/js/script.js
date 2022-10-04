@@ -262,6 +262,15 @@ document.querySelector('#close-three').onclick = function(){
     document.querySelector('.navigation-menu').classList.remove('active');
 }
 
+/* document.querySelector('.menu-fx').onclick = function(){
+    document.querySelector('.navigation-one').classList.add('active-one');
+}
+
+document.querySelector('.menu-close').onclick = function(){
+    document.querySelector('.navigation-one').classList.remove('active-one');
+}
+ */
+
 document.querySelector('.menu-fx').onclick = function(){
     document.querySelector('.navigation-one').classList.add('active-one');
 }
@@ -269,6 +278,15 @@ document.querySelector('.menu-fx').onclick = function(){
 document.querySelector('.menu-close').onclick = function(){
     document.querySelector('.navigation-one').classList.remove('active-one');
 }
+
+document.querySelector('.tel-menu-four').onclick = function(){
+    document.querySelector('.navigation-one').classList.remove('active-one');
+}
+
+
+
+
+
 
 
 

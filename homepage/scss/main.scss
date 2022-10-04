@@ -237,7 +237,7 @@ body{
       /* display: none; */
       position: fixed;
       width: 100%;
-      z-index: 3;
+      z-index: 17;
       transition: 1s;
       top: 0;
       @include onlylarge(1600px){
@@ -291,7 +291,8 @@ body{
        }
       .second{
         display: flex;
-        justify-content: space-between;
+          justify-content: center;
+        
 
         @include onlylarge(1600px){
           width: 95%;
@@ -303,6 +304,11 @@ body{
           padding-bottom: 24px;
          }
         li{
+          padding-left: 85px;
+          @include onlylarge(1200px){
+            padding-left: 44px;
+           } 
+
           a{
             text-decoration: none;
             font-weight: 500;
@@ -329,6 +335,13 @@ body{
             }
           }
         }
+
+        .firstli{
+          padding-left: 0px;
+          @include onlylarge(1024px){
+             padding-left: 44px;
+           }
+        } 
       }
     }
 
@@ -2496,7 +2509,7 @@ body{
   transform: rotate(180deg);
  }
 
- .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+ .swiper-horizontal>.swiper-pagination-bullets-one, .swiper-pagination-bullets-one.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
   text-align: center;
   top: 93%;
   z-index: 2;
@@ -2516,7 +2529,7 @@ body{
 
  }
 
- .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+ .swiper-horizontal>.swiper-pagination-bullets-one .swiper-pagination-bullets-one, .swiper-pagination-horizontal.swiper-pagination-bullets-one .swiper-pagination-bullet{
   margin-right: 52px;
   @include onlylarge(1250px){
     margin-right: 37px;
@@ -2532,7 +2545,7 @@ body{
  }
 
 
- .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:last-child{
+ .swiper-horizontal>.swiper-pagination-bullets-one .swiper-pagination-bullets-one, .swiper-pagination-horizontal.swiper-pagination-bullets-one .swiper-pagination-bullet:last-child{
 
   @include onlylarge(1024px){
     margin-right: 32px;
