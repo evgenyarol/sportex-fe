@@ -1,7 +1,7 @@
 new Swiper('.crd',{
     //стрелки
    slidesPerView: '4',
-   spaceBetween: 30,   
+   spaceBetween:  30,   
    keyboard: {
        enabled: true,
        onlyInViewport: true,
@@ -57,13 +57,21 @@ new Swiper('.crd',{
    breakpoints: {
 
      320: {
-           slidesPerView: 1.25,
+           slidesPerView: 1.18,
            spaceBetween: 35, 
            
        },
 
+       393 : {
+           slidesPerView: 1.2,
 
-       450: {
+           spaceBetween: 40, 
+           
+           
+       },
+
+
+       488: {
            slidesPerView: 1.5,
        },
 
@@ -87,17 +95,17 @@ new Swiper('.crd',{
        },
 
 
-       900: {
-        slidesPerView: 2.3,
+       1051: {
+        slidesPerView: 3,
        },
 
        
-       1024: {
-           slidesPerView: 2.5,
+       1250: {
+           slidesPerView: 3.2,
            
        },
-       1140: {
-           slidesPerView: 3,
+       1400: {
+           slidesPerView: 3.3,
            
        },
 
@@ -306,7 +314,7 @@ new Swiper('.mygg',{
        prevEl:'.swiper-button-prev'
 
    },
-   slidesPerView: '1.3',
+   slidesPerView: '1.6',
    loop: true,
     spaceBetween: 80,   
    centeredSlides: true,
@@ -356,7 +364,37 @@ new Swiper('.mygg',{
    breakpoints: {
 
 
-     320: {
+    300: {
+        slidesPerView: 1.3,
+
+        spaceBetween: 20,
+       },
+
+
+    405: {
+        slidesPerView: 1.3,
+
+        spaceBetween: 20,
+       },
+
+
+
+    434: {
+        slidesPerView: 1.4,
+
+        spaceBetween: 20,
+       },
+
+
+
+    467: {
+        slidesPerView: 1.5,
+
+        spaceBetween: 20,
+       },
+
+
+     530: {
         slidesPerView: 1.3,
 
         spaceBetween: 20,
@@ -365,42 +403,82 @@ new Swiper('.mygg',{
     
 
 
-     400: {
-        slidesPerView: 1.3,
+     621: {
+        slidesPerView: 1.5,
 
-        spaceBetween: 20,
+        spaceBetween: 30,
        },
 
-       590: {
-        slidesPerView: 1.4,
+       663: {
+        slidesPerView: 1.6,
 
-        spaceBetween: 20,
+        spaceBetween: 30,
        },
-       732: {
+
+
+       785: {
+        slidesPerView: 1.5,
+        spaceBetween: 60,
+       },
+
+     
+
+       844: {
+        slidesPerView: 1.6,
+        spaceBetween: 60,
+       },
+
+       994: {
         slidesPerView: 1.3,
         spaceBetween: 40,
        },
-       1001: {
+
+
+       1153: {
+        slidesPerView: 1.6,
+        spaceBetween: 40,
+       },
+       
+
+      
+
+       1228: {
         slidesPerView: 1.5, 
         spaceBetween: 40, 
-       },
+       }, 
 
-        1160: {
-           slidesPerView: 1.4,
+       1312: {
+        slidesPerView: 1.6, 
+        spaceBetween: 40, 
+       }, 
 
-       },
-
-         1380: {
-           slidesPerView: 1.6,
-
-       },
-
-        1550: {
-           slidesPerView: 1.5,
-       },
-
-       1800: {
+       1424: {
            slidesPerView: 1.7,
+
+       },
+
+
+        1501: {
+           slidesPerView: 1.8,
+
+       },
+
+        1601: {
+           slidesPerView: 1.9,
+
+       },
+
+         1657: {
+           slidesPerView: 1.9,
+
+       },
+
+        1766: {
+           slidesPerView: 1.7,
+       },
+
+       1875: {
+           slidesPerView: 1.8,
        },
        
    },
@@ -639,3 +717,87 @@ document.querySelector('.center-side').onclick = function(){
     document.querySelector('.ifr').classList.add('openyoutube');
     document.querySelector('.da').classList.add('close-butt');
 }
+
+
+
+
+document.querySelector('#join').onclick = function(){
+    document.querySelector('.overlay').classList.add('open-join');
+
+}
+
+document.querySelector('#butter-footer').onclick = function(){
+    document.querySelector('.overlay').classList.add('open-join');
+
+}
+
+
+document.querySelector('#overlay-close').onclick = function(){
+    document.querySelector('.overlay').classList.remove('open-join');
+
+}
+
+/*  */
+
+
+
+    document.querySelector('#button-one').onclick = function(){
+        document.querySelector('.infor').classList.add('close-infor');
+        document.querySelector('.infor-two').classList.add('close-infor-two');
+    
+    }
+
+    
+    document.querySelector('#butt-two').onclick = function(){
+        document.querySelector('.infor-two').classList.remove('close-infor-two')
+        document.querySelector('.infor-three').classList.add('close-infor-three');
+    
+    }
+
+
+    document.querySelector('#butt-three').onclick = function(){
+        document.querySelector('.infor-three').classList.remove('close-infor-three')
+        document.querySelector('.infor-four').classList.add('close-infor-four');
+    
+    }
+
+
+    document.querySelector('#overlay-close-two').onclick = function(){
+        document.querySelector('.overlay').classList.remove('open-join');
+    
+    }
+
+
+    document.querySelector('#overlay-close-three').onclick = function(){
+        document.querySelector('.overlay').classList.remove('open-join');
+    
+    }
+
+    
+    document.querySelector('#overlay-close-four').onclick = function(){
+        document.querySelector('.overlay').classList.remove('open-join');
+    
+    }
+
+    document.querySelector('#circle').onclick = function(){
+        document.querySelector('.infor-two').classList.remove('close-infor-two');
+        document.querySelector('.infor').classList.remove('close-infor');
+    
+    }
+
+    
+    document.querySelector('#circle-two').onclick = function(){
+        document.querySelector('.infor-three').classList.remove('close-infor-three');
+        document.querySelector('.infor-two').classList.add('close-infor-two');
+    
+    }
+
+    document.querySelector('#circle-three').onclick = function(){
+        document.querySelector('.infor-four').classList.remove('close-infor-four');
+        document.querySelector('.infor-three').classList.add('close-infor-three');
+    
+    }
+
+
+    /*  */
+  
