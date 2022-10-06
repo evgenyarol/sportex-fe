@@ -3290,7 +3290,6 @@ footer .all-info .social-media .first-block {
   /* transition: 0.8s; */
   position: relative;
   z-index: 1;
-  background-size: 0px 0px;
   background-position: center;
 }
 
@@ -3324,7 +3323,6 @@ footer .all-info .social-media .secondblock {
   background-image: url(../images/telegram-white.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 0px 0px;
   border-radius: 0px;
   width: 348px;
   padding-top: 38px;
@@ -3370,7 +3368,6 @@ footer .all-info .social-media .secondblock .nn-one {
 footer .all-info .social-media .three-block {
   border: 2px solid #FFFFFF;
   border-right: none;
-  background-size: 0px 0px;
   background-position: center;
   border-radius: 0px;
   width: 348px;
@@ -3417,7 +3414,6 @@ footer .all-info .social-media .three-block .nn-one {
 
 footer .all-info .social-media .third-block {
   border: 2px solid #FFFFFF;
-  background-size: 0px 0px;
   background-position: center;
   border-radius: 0px;
   width: 348px;
@@ -3499,7 +3495,7 @@ footer .all-info .social-media .first-block:hover {
 }
 
 footer .all-info .social-media .nn-one:hover {
-  background-size: 0px 0px;
+  background-image: none;
   background-position: center;
 }
 

@@ -2824,7 +2824,7 @@ body{
         /* transition: 0.8s; */
         position: relative;
         z-index: 1;
-        background-size: 0px 0px;
+        
         background-position: center;
         
        
@@ -2860,7 +2860,7 @@ body{
         background-image: url(../images/telegram-white.svg);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 0px 0px;
+   
         
         border-radius: 0px;
         width: 348px; 
@@ -2901,7 +2901,6 @@ body{
         border:2px solid #FFFFFF ;
         border-right: none;
 
-        background-size: 0px 0px;
         background-position: center;
         
         
@@ -2945,7 +2944,7 @@ body{
       .third-block{
         border:2px solid #FFFFFF ;
 
-        background-size: 0px 0px;
+       
         background-position: center;
         
 
@@ -3037,7 +3036,7 @@ body{
       }
 
       .nn-one:hover{
-        background-size: 0px 0px;
+        background-image: none;
         background-position: center;
       }
 
