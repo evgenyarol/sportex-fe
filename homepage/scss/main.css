@@ -3495,7 +3495,7 @@ footer .all-info .social-media .first-block:hover {
 }
 
 footer .all-info .social-media .nn-one:hover {
-  background-image: url(../images/twiter-blue.svg);
+  background-image: none;
   background-position: center;
 }
 
