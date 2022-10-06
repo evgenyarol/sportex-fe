@@ -3370,9 +3370,8 @@ footer .all-info .social-media .secondblock .nn-one {
 footer .all-info .social-media .three-block {
   border: 2px solid #FFFFFF;
   border-right: none;
-  background-image: url(../images/m-white.svg);
-  /*   background-position: center; */
-  background-repeat: no-repeat;
+  background-size: 0px 0px;
+  background-position: center;
   border-radius: 0px;
   width: 348px;
   padding-top: 38px;
@@ -3400,41 +3399,26 @@ footer .all-info .social-media .three-block {
   }
 }
 
-footer .all-info .social-media .three-block .blue-pictures {
-  display: none;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+footer .all-info .social-media .three-block .nn-one {
   width: 37px;
   height: 37px;
-}
-
-@media only screen and (max-width: 850px) {
-  footer .all-info .social-media .three-block .blue-pictures {
-    width: 25px;
-    height: 25px;
-  }
-}
-
-footer .all-info .social-media .three-block .white-pictures {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
   -webkit-transition: 0.8s;
   transition: 0.8s;
-  width: 37px;
-  height: 37px;
-}
-
-@media only screen and (max-width: 850px) {
-  footer .all-info .social-media .three-block .white-pictures {
-    width: 25px;
-    height: 25px;
-  }
+  background-image: url(../images/m-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 37px 37px;
 }
 
 footer .all-info .social-media .third-block {
   border: 2px solid #FFFFFF;
-  background-image: url(../images/in-white.svg);
+  background-size: 0px 0px;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: 37px 37px;
   border-radius: 0px;
   width: 348px;
   padding-top: 38px;
@@ -3461,31 +3445,20 @@ footer .all-info .social-media .third-block {
   }
 }
 
-footer .all-info .social-media .third-block .blue-pictures {
-  display: none;
+footer .all-info .social-media .third-block .nn-one {
+  width: 37px;
+  height: 37px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
   -webkit-transition: 0.8s;
   transition: 0.8s;
-  width: 37px;
-  height: 37px;
-}
-
-@media only screen and (max-width: 850px) {
-  footer .all-info .social-media .third-block .blue-pictures {
-    width: 25px;
-    height: 25px;
-  }
-}
-
-footer .all-info .social-media .third-block .white-pictures {
-  width: 37px;
-  height: 37px;
-}
-
-@media only screen and (max-width: 850px) {
-  footer .all-info .social-media .third-block .white-pictures {
-    width: 25px;
-    height: 25px;
-  }
+  background-image: url(../images/in-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 37px 37px;
 }
 
 footer .all-info .social-media .first-block:hover + .secondblock {
@@ -3534,16 +3507,26 @@ footer .all-info .social-media .secondblock:hover {
   border-left: 2px solid #0A34D2;
   border-top: 2px solid #0A34D2;
   border-bottom: 2px solid #0A34D2;
-  background-image: url(../images/tg-blue.svg);
+  background-image: url(../images/m-blue.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 37px 37px;
   cursor: pointer;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 footer .all-info .social-media .three-block:hover {
   border-left: 2px solid #0A34D2;
   border-top: 2px solid #0A34D2;
   border-bottom: 2px solid #0A34D2;
-  background-image: url(../images/m-blue.svg);
+  background-image: url(../images/in-blue.svg);
   cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 37px 37px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 @media only screen and (max-width: 850px) {
@@ -3555,7 +3538,12 @@ footer .all-info .social-media .three-block:hover {
 footer .all-info .social-media .third-block:hover {
   border: 2px solid #0A34D2;
   background-image: url(../images/in-blue.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 37px 37px;
   cursor: pointer;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 footer .all-info .mobile-media {
