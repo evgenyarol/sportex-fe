@@ -3503,11 +3503,10 @@ footer .all-info .social-media .secondblock:hover {
   border-left: 2px solid #0A34D2;
   border-top: 2px solid #0A34D2;
   border-bottom: 2px solid #0A34D2;
-  /*  background-image: url(../images/tg-blue.svg);
-
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 37px 37px ; */
+  background-image: url(../images/tg-blue.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 37px 37px;
   cursor: pointer;
   -webkit-transition: 0.8s;
   transition: 0.8s;
