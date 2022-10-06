@@ -3287,11 +3287,11 @@ footer .all-info .social-media .first-block {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+  /* transition: 0.8s; */
   position: relative;
   z-index: 1;
   background-size: 0px 0px;
+  background-position: center;
 }
 
 @media only screen and (max-width: 850px) {
@@ -3349,6 +3349,22 @@ footer .all-info .social-media .secondblock {
     padding-bottom: 15px;
     border-right: 2px solid #FFFFFF;
   }
+}
+
+footer .all-info .social-media .secondblock .nn-one {
+  width: 37px;
+  height: 37px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  background-image: url(../images/telegram-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 37px 37px;
 }
 
 footer .all-info .social-media .three-block {
@@ -3511,7 +3527,7 @@ footer .all-info .social-media .first-block:hover {
 
 footer .all-info .social-media .nn-one:hover {
   background-size: 0px 0px;
-  background-position: left;
+  background-position: center;
 }
 
 footer .all-info .social-media .secondblock:hover {
