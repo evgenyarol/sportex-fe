@@ -3291,10 +3291,7 @@ footer .all-info .social-media .first-block {
   transition: 0.8s;
   position: relative;
   z-index: 1;
-  background-image: url(../images/twiter-white.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 37px 37px !important;
+  background-size: 0px 0px;
 }
 
 @media only screen and (max-width: 850px) {
@@ -3305,33 +3302,20 @@ footer .all-info .social-media .first-block {
   }
 }
 
-footer .all-info .social-media .first-block .blue-pictures {
-  display: none;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+footer .all-info .social-media .first-block .nn-one {
   width: 37px;
   height: 37px;
-}
-
-@media only screen and (max-width: 850px) {
-  footer .all-info .social-media .first-block .blue-pictures {
-    width: 25px;
-    height: 25px;
-  }
-}
-
-footer .all-info .social-media .first-block .white-pictures {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
   -webkit-transition: 0.8s;
   transition: 0.8s;
-  width: 37px;
-  height: 37px;
-}
-
-@media only screen and (max-width: 850px) {
-  footer .all-info .social-media .first-block .white-pictures {
-    width: 25px;
-    height: 25px;
-  }
+  background-image: url(../images/twiter-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 37px 37px;
 }
 
 footer .all-info .social-media .secondblock {
@@ -3340,7 +3324,7 @@ footer .all-info .social-media .secondblock {
   background-image: url(../images/telegram-white.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 37px 37px;
+  background-size: 0px 0px;
   border-radius: 0px;
   width: 348px;
   padding-top: 38px;
@@ -3371,9 +3355,8 @@ footer .all-info .social-media .three-block {
   border: 2px solid #FFFFFF;
   border-right: none;
   background-image: url(../images/m-white.svg);
-  background-position: center;
+  /*   background-position: center; */
   background-repeat: no-repeat;
-  background-size: 37px 37px;
   border-radius: 0px;
   width: 348px;
   padding-top: 38px;
@@ -3518,7 +3501,17 @@ footer .all-info .social-media .first-block:hover {
   border-top: 2px solid #0A34D2;
   border-bottom: 2px solid #0A34D2;
   background-image: url(../images/twiter-blue.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 37px 37px;
   cursor: pointer;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+footer .all-info .social-media .nn-one:hover {
+  background-size: 0px 0px;
+  background-position: left;
 }
 
 footer .all-info .social-media .secondblock:hover {
