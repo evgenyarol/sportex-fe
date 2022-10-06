@@ -3291,6 +3291,10 @@ footer .all-info .social-media .first-block {
   transition: 0.8s;
   position: relative;
   z-index: 1;
+  background-image: url(../images/twiter-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 37px 37px;
 }
 
 @media only screen and (max-width: 850px) {
@@ -3333,6 +3337,10 @@ footer .all-info .social-media .first-block .white-pictures {
 footer .all-info .social-media .secondblock {
   border: 2px solid #FFFFFF;
   border-right: none;
+  background-image: url(../images/telegram-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 37px 37px;
   border-radius: 0px;
   width: 348px;
   padding-top: 38px;
@@ -3359,38 +3367,13 @@ footer .all-info .social-media .secondblock {
   }
 }
 
-footer .all-info .social-media .secondblock .blue-pictures {
-  display: none;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  width: 37px;
-  height: 37px;
-}
-
-@media only screen and (max-width: 850px) {
-  footer .all-info .social-media .secondblock .blue-pictures {
-    width: 25px;
-    height: 25px;
-  }
-}
-
-footer .all-info .social-media .secondblock .white-pictures {
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  width: 37px;
-  height: 37px;
-}
-
-@media only screen and (max-width: 850px) {
-  footer .all-info .social-media .secondblock .white-pictures {
-    width: 25px;
-    height: 25px;
-  }
-}
-
 footer .all-info .social-media .three-block {
   border: 2px solid #FFFFFF;
   border-right: none;
+  background-image: url(../images/m-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 37px 37px;
   border-radius: 0px;
   width: 348px;
   padding-top: 38px;
@@ -3449,6 +3432,10 @@ footer .all-info .social-media .three-block .white-pictures {
 
 footer .all-info .social-media .third-block {
   border: 2px solid #FFFFFF;
+  background-image: url(../images/in-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 37px 37px;
   border-radius: 0px;
   width: 348px;
   padding-top: 38px;
@@ -3530,12 +3517,14 @@ footer .all-info .social-media .first-block:hover {
   border-left: 2px solid #0A34D2;
   border-top: 2px solid #0A34D2;
   border-bottom: 2px solid #0A34D2;
+  background-image: url(../images/twiter-blue.svg);
 }
 
 footer .all-info .social-media .secondblock:hover {
   border-left: 2px solid #0A34D2;
   border-top: 2px solid #0A34D2;
   border-bottom: 2px solid #0A34D2;
+  background-image: url(../images/tg-blue.svg);
 }
 
 @media only screen and (max-width: 850px) {
@@ -3548,6 +3537,7 @@ footer .all-info .social-media .three-block:hover {
   border-left: 2px solid #0A34D2;
   border-top: 2px solid #0A34D2;
   border-bottom: 2px solid #0A34D2;
+  background-image: url(../images/m-blue.svg);
 }
 
 @media only screen and (max-width: 850px) {
@@ -3558,6 +3548,7 @@ footer .all-info .social-media .three-block:hover {
 
 footer .all-info .social-media .third-block:hover {
   border: 2px solid #0A34D2;
+  background-image: url(../images/in-blue.svg);
 }
 
 footer .all-info .mobile-media {
@@ -3700,10 +3691,6 @@ footer .all-info .mobile-media .seven-block .nn-three {
   height: 100%;
   position: absolute;
   top: 0;
-}
-
-footer .all-info .mobile-media .seven-block .nn-three:hover {
-  border: 2px solid #0A34D2;
 }
 
 footer .all-info .mobile-media .seven-block:hover {

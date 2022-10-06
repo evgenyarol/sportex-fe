@@ -2824,6 +2824,10 @@ body{
         transition: 0.8s;
         position: relative;
         z-index: 1;
+        background-image: url(../images/twiter-white.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 37px 37px;
         @include onlylarge(850px){
           width: auto;
           padding-top: 15px;
@@ -2856,7 +2860,10 @@ body{
       .secondblock{
         border:2px solid #FFFFFF ;
         border-right: none;
-
+        background-image: url(../images/telegram-white.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 37px 37px;
         
         border-radius: 0px;
         width: 348px; 
@@ -2874,32 +2881,17 @@ body{
           padding-bottom: 15px;
           border-right: 2px solid #FFFFFF;
          }   
-        .blue-pictures{
-          display: none;
-          transition: 0.8s;
-          width: 37px;
-          height: 37px;
-          @include onlylarge(850px){
-            width: 25px;
-            height: 25px;
-           }   
-        }
-
-        .white-pictures{
-          transition: 0.8s;
-          width: 37px;
-          height: 37px;
-          @include onlylarge(850px){
-            width: 25px;
-            height: 25px;
-           }   
-        }
- 
+        
       }
 
       .three-block{
         border:2px solid #FFFFFF ;
         border-right: none;
+
+        background-image: url(../images/m-white.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 37px 37px;
 
         
         border-radius: 0px;
@@ -2944,6 +2936,11 @@ body{
 
       .third-block{
         border:2px solid #FFFFFF ;
+
+        background-image: url(../images/in-white.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 37px 37px;
 
 
         
@@ -3025,12 +3022,16 @@ body{
         border-left: 2px solid #0A34D2; 
         border-top: 2px solid #0A34D2; 
         border-bottom: 2px solid #0A34D2; 
+        background-image: url(../images/twiter-blue.svg);
+       
       }
 
       .secondblock:hover{
         border-left: 2px solid #0A34D2; 
         border-top: 2px solid #0A34D2; 
         border-bottom: 2px solid #0A34D2;
+        background-image: url(../images/tg-blue.svg);
+        
 
         @include onlylarge(850px){
           border-right:  2px solid #0A34D2;
@@ -3042,7 +3043,9 @@ body{
       .three-block:hover{
         border-left: 2px solid #0A34D2; 
         border-top: 2px solid #0A34D2; 
-        border-bottom: 2px solid #0A34D2; 
+        border-bottom: 2px solid #0A34D2;
+        background-image: url(../images/m-blue.svg);
+       
         
         @include onlylarge(850px){
           border-top:  none;
@@ -3052,6 +3055,8 @@ body{
 
       .third-block:hover{
         border: 2px solid #0A34D2; 
+        background-image: url(../images/in-blue.svg);
+       
       }
 
      
@@ -3183,10 +3188,7 @@ body{
           top: 0;
         }
 
-        .nn-three:hover{
-          border: 2px solid #0A34D2;
-
-        }
+        
 
       }
 

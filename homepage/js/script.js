@@ -415,21 +415,54 @@ new Swiper('.mygg',{
         spaceBetween: 30,
        },
 
+       600: {
+        slidesPerView: 1.4,
+        spaceBetween: 40,
+       },
 
-       785: {
+
+       642: {
+        slidesPerView: 1.3,
+        spaceBetween: 50,
+       },
+
+       735: {
+        slidesPerView: 1.4,
+        spaceBetween: 40,
+
+       },
+
+
+       777: {
         slidesPerView: 1.5,
-        spaceBetween: 60,
+        spaceBetween: 40,
+
+       },
+
+        853: {
+        slidesPerView: 1.6,
+
+       },
+
+       897: {
+        slidesPerView: 1.7,
+
        },
 
      
 
-       844: {
-        slidesPerView: 1.6,
+       995: {
+        slidesPerView: 1.3,
         spaceBetween: 60,
        },
 
-       994: {
-        slidesPerView: 1.3,
+       1002: {
+        slidesPerView: 1.4,
+        spaceBetween: 40,
+       },
+
+       1080: {
+        slidesPerView: 1.5,
         spaceBetween: 40,
        },
 
@@ -459,6 +492,11 @@ new Swiper('.mygg',{
 
 
         1501: {
+           slidesPerView: 1.7,
+
+       },
+
+        1513: {
            slidesPerView: 1.8,
 
        },
@@ -469,12 +507,12 @@ new Swiper('.mygg',{
        },
 
          1657: {
-           slidesPerView: 1.9,
+           slidesPerView: 1.6,
 
        },
 
         1766: {
-           slidesPerView: 1.7,
+           slidesPerView: 1.65,
        },
 
        1875: {
@@ -487,17 +525,26 @@ new Swiper('.mygg',{
 
 /*  */
 
-new Swiper('.cards',{
+const swiper = new Swiper('.cards',{
     //стрелки
 
      mousewheel: {
          
         //класс объекта на котором будет отрабатываться
        /*  eventsTarget: ".image-slider"   */ 
-       forceToAxis: true,
+      
+       /* releaseOnEdges: true, */
        sensitivity: 1,
-       releaseOnEdges: true,
+
+       
+
     }, 
+    
+    /* freeMode: true, */
+
+
+  
+ 
 
     // включение и отключение
     // перетаскивания на pc
@@ -510,8 +557,10 @@ new Swiper('.cards',{
     grabCursor: false,
     //переключение на слайд при клике на него
     slideToClickedSlide: true,
-
+    allowTouchMove: true,
     /* allowTouchMove: false, */
+
+  
 
 
     //управление клаваой
@@ -527,27 +576,9 @@ new Swiper('.cards',{
 
     
 
-  /*   on: {
-        slideChange () {
-          const countAllSlides = swiper.slides.length
-          const swiperIndex = swiper.realIndex
-    
-          if (countAllSlides - 1 === swiperIndex) {
-             // do scroll 
-          }
-        }
-        
-      },
+   
 
-      */
-
-    /*   function getCountAllSlides (swiper) {
-        return swiper.slides.length
-      },
-      
-      function getRealIndex () {
-        return swiper.realIndex
-      }, */
+  
   
 
     //кол-во слайдов для показа 
@@ -564,9 +595,16 @@ new Swiper('.cards',{
         perSlideOffset: 10 , 
 
         perSlideRotate: 0,
-        rotate: false ,
+        rotate: true ,
+
+        
         
       },
+
+      
+
+  
+ 
 
 
     //адаптивность
@@ -576,17 +614,36 @@ new Swiper('.cards',{
         },
         480: {
             slidesPerView: 1,
+
+                  //автопрокрутка
+       
+            
             
         },
-        992: {
+        1024: {
             slidesPerView: 1,
         }
     },
 
+     
+/*     on: {
+        slideChange: function() {
+            setTimeout(function () {
+                swiper.params.mousewheel.releaseOnEdges = false;
+            }, 500);
+        },
+        reachEnd: function() {
+            setTimeout(function () {
+                swiper.params.mousewheel.releaseOnEdges = true;
+            }, 750);
+        }
+    }, */
+
     
 });
 
-/* 1 */
+
+
 
 
 document.querySelector('#plus1').onclick = function(){
@@ -800,6 +857,4 @@ document.querySelector('#overlay-close').onclick = function(){
 
 
     /*  */
-  
-
   
