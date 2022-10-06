@@ -3294,7 +3294,7 @@ footer .all-info .social-media .first-block {
   background-image: url(../images/twiter-white.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 37px 37px;
+  background-size: 37px 37px !important;
 }
 
 @media only screen and (max-width: 850px) {
@@ -3518,6 +3518,7 @@ footer .all-info .social-media .first-block:hover {
   border-top: 2px solid #0A34D2;
   border-bottom: 2px solid #0A34D2;
   background-image: url(../images/twiter-blue.svg);
+  cursor: pointer;
 }
 
 footer .all-info .social-media .secondblock:hover {
@@ -3525,12 +3526,7 @@ footer .all-info .social-media .secondblock:hover {
   border-top: 2px solid #0A34D2;
   border-bottom: 2px solid #0A34D2;
   background-image: url(../images/tg-blue.svg);
-}
-
-@media only screen and (max-width: 850px) {
-  footer .all-info .social-media .secondblock:hover {
-    border-right: 2px solid #0A34D2;
-  }
+  cursor: pointer;
 }
 
 footer .all-info .social-media .three-block:hover {
@@ -3538,6 +3534,7 @@ footer .all-info .social-media .three-block:hover {
   border-top: 2px solid #0A34D2;
   border-bottom: 2px solid #0A34D2;
   background-image: url(../images/m-blue.svg);
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 850px) {
@@ -3549,6 +3546,7 @@ footer .all-info .social-media .three-block:hover {
 footer .all-info .social-media .third-block:hover {
   border: 2px solid #0A34D2;
   background-image: url(../images/in-blue.svg);
+  cursor: pointer;
 }
 
 footer .all-info .mobile-media {

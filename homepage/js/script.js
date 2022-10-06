@@ -525,7 +525,7 @@ new Swiper('.mygg',{
 
 /*  */
 
-const swiper = new Swiper('.cards',{
+let swiperr = new Swiper('.cards',{
     //стрелки
 
      mousewheel: {
@@ -533,7 +533,8 @@ const swiper = new Swiper('.cards',{
         //класс объекта на котором будет отрабатываться
        /*  eventsTarget: ".image-slider"   */ 
       
-       /* releaseOnEdges: true, */
+      /*  releaseOnEdges: true, */
+       
        sensitivity: 1,
 
        
@@ -582,7 +583,7 @@ const swiper = new Swiper('.cards',{
   
 
     //кол-во слайдов для показа 
-    slidesPerView: '1',
+    slidesPerView: 'auto',
 
     //speed
     speed: 1000,
@@ -625,6 +626,10 @@ const swiper = new Swiper('.cards',{
         }
     },
 
+
+
+    
+
      
 /*     on: {
         slideChange: function() {
@@ -641,6 +646,17 @@ const swiper = new Swiper('.cards',{
 
     
 });
+
+let slblock = document.querySelector('.cards');
+slblock.addEventListener("mouseenter" , function (e){
+    cards.params.autoplay.disableOnInteraction = false;
+    cards.params.autoplay.delay = 500;
+    cards.params.autoplay.start();
+});
+
+
+
+
 
 
 
