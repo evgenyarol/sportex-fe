@@ -843,6 +843,8 @@ document.querySelector('#overlay-close').onclick = function(){
           /* mousewheel: true, */
     
           speed:1000,
+
+          watchOverflow: true ,
     
     
           on: {
@@ -873,7 +875,7 @@ document.querySelector('#overlay-close').onclick = function(){
         // перетаскивания на pc
         simulateTouch: false,
         //чувствительность свайпа
-        touchRatio: 3,
+        touchRatio: 1,
         //угол срабатывания свайпа
         touchAngle: 90,
         //курсор перетаскиваня
@@ -914,7 +916,7 @@ document.querySelector('#overlay-close').onclick = function(){
             perSlideOffset: 10 , 
     
             perSlideRotate: 0,
-            rotate: true ,
+            rotate: false ,
     
             
             
