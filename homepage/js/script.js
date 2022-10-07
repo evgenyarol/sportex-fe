@@ -57,15 +57,15 @@ new Swiper('.crd',{
    breakpoints: {
 
      320: {
-           slidesPerView: 1.18,
-           spaceBetween: 35, 
+           slidesPerView: 1.19,
+           spaceBetween: 10, 
            
        },
 
-       393 : {
-           slidesPerView: 1.2,
+       407 : {
+           slidesPerView: 1.3,
 
-           spaceBetween: 40, 
+            
            
            
        },
@@ -77,7 +77,21 @@ new Swiper('.crd',{
 
 
        600: {
-        slidesPerView: 1.9,
+        slidesPerView: 1.8,
+       },
+
+
+
+
+       646: {
+        slidesPerView: 2,
+       },
+
+
+
+
+       710: {
+        slidesPerView: 2.2,
        },
 
 
@@ -87,25 +101,37 @@ new Swiper('.crd',{
 
 
        768: {
-        slidesPerView: 1.8,
-       },
-
-       800: {
         slidesPerView: 2.15,
        },
 
+       822: {
+        slidesPerView: 2.3,
+       },
 
-       1051: {
+       902: {
+        slidesPerView: 2.5,
+       },
+
+       1012: {
+        slidesPerView: 2.8,
+        spaceBetween: 30,
+       },
+
+
+       1100: {
         slidesPerView: 3,
+        spaceBetween: 30,
        },
 
        
        1250: {
            slidesPerView: 3.2,
+           spaceBetween:  30,
            
        },
        1400: {
            slidesPerView: 3.3,
+           spaceBetween:  0, 
            
        },
 
@@ -345,19 +371,23 @@ new Swiper('.mygg',{
     //автопрокрутка
     autoplay: {
         //пауза между прокруткой
-        delay:100,
+        /* delay:100, */
         //закончить на последнем слайдк
-        stopOnLastSlide: true,
+       /*  stopOnLastSlide: true, */
         //откл после ручного переключениея
-        disableOnInteraction: false,
+/*         disableOnInteraction: false, */
         reverseDirection: true,
+
+        delay: 1,
+        disableOnInteraction: false,
        
         
     },
 
 
-    speed : 1000 ,
-
+    freeMode: true,
+    speed: 3500,
+    freeModeMomentum: false,
     
 
 
@@ -870,6 +900,9 @@ document.querySelector('#overlay-close').onclick = function(){
         document.querySelector('.infor-three').classList.add('close-infor-three');
     
     }
+
+ 
+
 
 
     /*  */

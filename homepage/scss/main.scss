@@ -366,8 +366,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    visibility: hidden;
+    opacity: 0;
     transition: 0.8s;
-    left: 100%;
     @include onlylarge(1024px){
       padding-left: 0px;
       padding-right: 0px;
@@ -614,6 +615,8 @@ body{
         }
       }
 
+      
+
       .infor.close-infor{
         display: none;
       }
@@ -705,10 +708,13 @@ body{
       }
 
     }
+
+    
   }
   
   .overlay.open-join{
-    left: 0;
+    visibility: visible;
+    opacity: 1;
   }
 
   /* .overlay-two{
@@ -1467,6 +1473,14 @@ body{
           transition: 0.8s;
           cursor: pointer;
           border-bottom: 2px solid  #3861FB;
+
+          @include onlylarge(1500px){
+           width: 330px;
+          }
+
+          @include onlylarge(1259px){
+            width: 300px;
+           }
           
           @include onlylarge(767px){
             width: 256px;
@@ -1481,6 +1495,18 @@ body{
             line-height: 140%;
             color: #FFFFFF; 
             padding-top: 10px;
+            padding-left: 10px;
+            @include onlylarge(1115px){
+              padding-left: 10px;
+              
+              
+            } 
+
+            @include onlylarge(767px){
+              padding-left: 0px;
+              padding-right: 0px;
+              
+            } 
           }
           .nubmer-two{
             color: transparent;
@@ -1489,11 +1515,11 @@ body{
             font-size: 40px;
             line-height: 140%;  
             opacity: 0;
-            padding-left: 30px;
+            padding-left: 10px;
             transition: 0.8s;
             @include onlylarge(1115px){
-              padding-left: 15px;
-              padding-right: 15px;
+              padding-left: 10px;
+             
               
             } 
 
@@ -1524,11 +1550,20 @@ body{
               position: absolute;
               padding-top: 47px;
               transition: 0.8s;
+              padding-left: 10px; 
+              /* padding-right: 30px; */
+              width: 300px;
               @include onlylarge(1500px){
                 padding-right: 30px;
               }
+              @include onlylarge(1115px){
+                padding-left: 10px;
+                padding-right: 15px;
+                
+              }
               @include onlylarge(767px){
                 font-size: 15px;
+                width: 230px;
               }
             } 
 
@@ -1540,14 +1575,14 @@ body{
               color: #FFFFFF;  
               padding-top: 20px;
               opacity: 0;        
-              padding-left: 30px; 
+              padding-left: 10px; 
               padding-right: 30px; 
               padding-bottom: 59px;  
               width: 273px;
               transition: 0.8s;
             
               @include onlylarge(1115px){
-                padding-left: 15px;
+                padding-left: 10px;
                 padding-right: 15px;
                 
               }
@@ -2821,7 +2856,7 @@ body{
         display: flex;
         justify-content: center;
         cursor: pointer;
-        /* transition: 0.8s; */
+        transition: 0.8s;
         position: relative;
         z-index: 1;
         
@@ -3037,7 +3072,7 @@ body{
 
       .nn-one:hover{
         background-image: none;
-        background-position: center;
+        background-position: center ;
       }
 
       
@@ -3682,3 +3717,13 @@ footer .all-info .social-media .secondblock:hover a .white-pictures{
  }
 
  /* animation-card */
+
+
+ /*  */
+
+ 
+.swiper-wrapper {
+  -webkit-transition-timing-function:linear!important; 
+  -o-transition-timing-function:linear!important;
+  transition-timing-function:linear!important; 
+}
