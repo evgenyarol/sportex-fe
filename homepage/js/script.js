@@ -212,7 +212,7 @@ document.onscroll = function () {
     }
 
     if(window.matchMedia('(max-width: 1024px)').matches){
-        if (scroll > headerH + 1450 ) {
+        if (scroll > headerH + 1250 ) {
             header.classList.add('header-white');
             document.body.style.paddingTop = headerH + 'px';
         } else  {
@@ -222,7 +222,7 @@ document.onscroll = function () {
     
         }
     
-        if (scroll > headerH + 5800 ) {
+        if (scroll > headerH + 5850 ) {
             header.classList.remove('header-white');
             document.body.style.paddingTop = headerH + 'px';
         } 
