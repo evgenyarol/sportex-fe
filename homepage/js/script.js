@@ -211,6 +211,23 @@ document.onscroll = function () {
         document.body.style.paddingTop = headerH + 'px';
     }
 
+    if(window.matchMedia('(max-width: 1024px)').matches){
+        if (scroll > headerH + 1450 ) {
+            header.classList.add('header-white');
+            document.body.style.paddingTop = headerH + 'px';
+        } else  {
+    
+            header.classList.remove('header-white');
+            document.body.removeAttribute('style');
+    
+        }
+    
+        if (scroll > headerH + 5800 ) {
+            header.classList.remove('header-white');
+            document.body.style.paddingTop = headerH + 'px';
+        } 
+    }
+
 
    
 
@@ -957,3 +974,4 @@ document.querySelector('#overlay-close').onclick = function(){
   
 
    
+    
