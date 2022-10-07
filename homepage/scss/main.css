@@ -395,6 +395,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .container-one header nav .second li {
+    padding-left: 0px;
+  }
+}
+
 .container-one header nav .second li a {
   text-decoration: none;
   font-weight: 500;
@@ -1208,6 +1214,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .container-one .second-menu .header nav .second li {
+    padding-left: 0px;
+  }
+}
+
 .container-one .second-menu .header nav .second li a {
   text-decoration: none;
   font-weight: 500;
@@ -1240,7 +1252,7 @@ body {
 
 @media only screen and (max-width: 1024px) {
   .container-one .second-menu .header nav .second .firstli {
-    padding-left: 44px;
+    padding-left: 0px;
   }
 }
 

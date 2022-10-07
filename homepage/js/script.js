@@ -856,7 +856,10 @@ document.querySelector('#overlay-close').onclick = function(){
                     swiper.params.mousewheel.releaseOnEdges = true;
                 }, 1000);
             }
-        }, 
+        },  
+ 
+
+       
       
     
         

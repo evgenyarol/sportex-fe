@@ -314,6 +314,10 @@ body{
             padding-left: 44px;
            } 
 
+           @include onlylarge(1024px){
+            padding-left: 0px;
+           } 
+
           a{
             text-decoration: none;
             font-weight: 500;
@@ -1040,6 +1044,9 @@ body{
             @include onlylarge(1200px){
               padding-left: 44px;
              }
+             @include onlylarge(1024px){
+              padding-left: 0px;
+             }
             a{
               text-decoration: none;
               font-weight: 500;
@@ -1070,7 +1077,7 @@ body{
           .firstli{
             padding-left: 0px;
             @include onlylarge(1024px){
-               padding-left: 44px;
+               padding-left: 0px;
              }
           }
         }
