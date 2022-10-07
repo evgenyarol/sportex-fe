@@ -200,6 +200,11 @@ body{
     padding-right: 24px;
     position: relative;
     /* z-index: 5; */
+
+    @include onlylarge(1024px){
+      padding-left: 15px;
+      padding-right: 15px;
+    } 
     ul{
       display: flex;
       align-items: center;
@@ -910,6 +915,10 @@ body{
         display: flex;
         align-items: center;
         padding-right: 24px;
+        @include onlylarge(1024px){
+         
+          padding-right: 15px;
+        } 
         li{
           a{
             text-decoration: none;
@@ -953,6 +962,10 @@ body{
 
       .images{
         padding-left: 24px;
+        @include onlylarge(1024px){
+         
+          padding-left: 15px;
+        } 
         .imagestwo{
           display: none;
         }
@@ -1003,8 +1016,8 @@ body{
               align-items: center;
               width: 100%;
               justify-content: space-between;
-              padding-left: 24px;
-              padding-right: 24px; 
+              padding-left: 15px;
+              padding-right: 15px; 
               
              }
   
@@ -2143,7 +2156,7 @@ body{
               @include onlylarge(400px){
                 padding-left: 0px;
                 position: relative;
-                left: 3%;
+                left: 4%;
                }   
               img{
                 width: 52px;

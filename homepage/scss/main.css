@@ -226,6 +226,13 @@ body {
   /* z-index: 5; */
 }
 
+@media only screen and (max-width: 1024px) {
+  .container-one header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .container-one header ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1037,6 +1044,12 @@ body {
   padding-right: 24px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .container-one .second-menu .header ul {
+    padding-right: 15px;
+  }
+}
+
 .container-one .second-menu .header ul li a {
   text-decoration: none;
   font-weight: 500;
@@ -1070,6 +1083,12 @@ body {
 
 .container-one .second-menu .header .images {
   padding-left: 24px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container-one .second-menu .header .images {
+    padding-left: 15px;
+  }
 }
 
 .container-one .second-menu .header .images .imagestwo {
@@ -1154,8 +1173,8 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -2428,7 +2447,7 @@ body {
   .container-four .back-one .down-info .any-buttons form button .pic {
     padding-left: 0px;
     position: relative;
-    left: 3%;
+    left: 4%;
   }
 }
 
