@@ -674,7 +674,7 @@ body {
   }
 }
 
-.container-one .overlay .info-card .infor form .first {
+.container-one .overlay .info-card .infor form .txt-one {
   border: 1px solid #E5E5E5;
   border-radius: 14px;
   margin-left: 59px;
@@ -686,16 +686,17 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 16px;
+  /*  */
 }
 
 @media only screen and (max-width: 512px) {
-  .container-one .overlay .info-card .infor form .first {
+  .container-one .overlay .info-card .infor form .txt-one {
     margin-left: 0px;
     margin-right: 0px;
   }
 }
 
-.container-one .overlay .info-card .infor form .first .txt {
+.container-one .overlay .info-card .infor form .txt-one .txt {
   font-family: 'Montserrat';
   font-weight: 500;
   font-size: 16px;
@@ -704,18 +705,18 @@ body {
   padding-left: 10px;
 }
 
-.container-one .overlay .info-card .infor form .first input:checked + label {
+.container-one .overlay .info-card .infor form .txt-one input:checked + label {
   color: #3861FB;
 }
 
-.container-one .overlay .info-card .infor form .first input[type="checkbox"]:checked,
-.container-one .overlay .info-card .infor form .first input[type="checkbox"]:not(:checked) {
+.container-one .overlay .info-card .infor form .txt-one input[type="checkbox"]:checked,
+.container-one .overlay .info-card .infor form .txt-one input[type="checkbox"]:not(:checked) {
   position: absolute;
   left: -9999px;
 }
 
-.container-one .overlay .info-card .infor form .first input[type="checkbox"]:checked + label,
-.container-one .overlay .info-card .infor form .first input[type="checkbox"]:not(:checked) + label {
+.container-one .overlay .info-card .infor form .txt-one input[type="checkbox"]:checked + label,
+.container-one .overlay .info-card .infor form .txt-one input[type="checkbox"]:not(:checked) + label {
   display: inline-block;
   position: relative;
   padding-left: 28px;
@@ -723,7 +724,7 @@ body {
   cursor: pointer;
 }
 
-.container-one .overlay .info-card .infor form .first input[type="checkbox"]:checked + label:before {
+.container-one .overlay .info-card .infor form .txt-one input[type="checkbox"]:checked + label:before {
   content: "";
   position: absolute;
   left: 0px;
@@ -734,7 +735,7 @@ body {
   background-color: #ffffff;
 }
 
-.container-one .overlay .info-card .infor form .first input[type="checkbox"]:not(:checked) + label:before {
+.container-one .overlay .info-card .infor form .txt-one input[type="checkbox"]:not(:checked) + label:before {
   content: "";
   position: absolute;
   left: 0px;
@@ -745,21 +746,21 @@ body {
   background-color: #ffffff;
 }
 
-.container-one .overlay .info-card .infor form .first input[type="checkbox"]:checked + label:before,
-.container-one .overlay .info-card .infor form .first input[type="checkbox"]:not(:checked) + label:before {
+.container-one .overlay .info-card .infor form .txt-one input[type="checkbox"]:checked + label:before,
+.container-one .overlay .info-card .infor form .txt-one input[type="checkbox"]:not(:checked) + label:before {
   border-radius: 2px;
 }
 
-.container-one .overlay .info-card .infor form .first input[type="checkbox"]:checked + label:after,
-.container-one .overlay .info-card .infor form .first input[type="checkbox"]:not(:checked) + label:after {
+.container-one .overlay .info-card .infor form .txt-one input[type="checkbox"]:checked + label:after,
+.container-one .overlay .info-card .infor form .txt-one input[type="checkbox"]:not(:checked) + label:after {
   content: "";
   position: absolute;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
-.container-one .overlay .info-card .infor form .first input[type="checkbox"]:checked + label:after,
-.container-one .overlay .info-card .infor form .first input[type="checkbox"]:not(:checked) + label:after {
+.container-one .overlay .info-card .infor form .txt-one input[type="checkbox"]:checked + label:after,
+.container-one .overlay .info-card .infor form .txt-one input[type="checkbox"]:not(:checked) + label:after {
   left: 3px;
   top: 4px;
   width: 15px;
@@ -770,12 +771,11 @@ body {
   background-repeat: no-repeat;
 }
 
-.container-one .overlay .info-card .infor form .first input[type="checkbox"]:not(:checked) + label:after {
+.container-one .overlay .info-card .infor form .txt-one input[type="checkbox"]:not(:checked) + label:after {
   opacity: 0;
 }
 
-.container-one .overlay .info-card .infor form .first input[type="checkbox"]:checked + label:after,
-.container-one .overlay .info-card .infor form .first input[type="radio"]:checked + label:after {
+.container-one .overlay .info-card .infor form .txt-one input[type="checkbox"]:checked + label:after {
   opacity: 1;
 }
 

@@ -468,7 +468,7 @@ body{
             padding-left: 15px;
             padding-right: 15px;
            }
-          .first{
+          .txt-one{
             border: 1px solid #E5E5E5;
             border-radius: 14px; 
             margin-left: 59px;
@@ -574,11 +574,16 @@ body{
                 opacity: 0;
             }
             
-            input[type="checkbox"]:checked + label:after, 
-            input[type="radio"]:checked + label:after {
+            input[type="checkbox"]:checked + label:after 
+             {
                 opacity: 1;
             } 
- 
+
+            /*  */
+
+             
+          
+           
             
             
          
@@ -701,6 +706,8 @@ body{
             
           }
         }
+
+       
       }
 
       .infor-four.close-infor-four{

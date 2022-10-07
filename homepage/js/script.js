@@ -555,24 +555,38 @@ new Swiper('.mygg',{
 
 /*  */
 
-let swiperr = new Swiper('.cards',{
+var swiperr = new Swiper('.swiper-container',{
     //стрелки
 
-     mousewheel: {
-         
-        //класс объекта на котором будет отрабатываться
-       /*  eventsTarget: ".image-slider"   */ 
-      
-      /*  releaseOnEdges: true, */
-       
-       sensitivity: 1,
 
-       
+    mousewheel: {
+        releaseOnEdges:true ,
+        sensitivity: 1 ,
+      },
+      direction: 'vertical',
 
+      /* mousewheel: true, */
+
+      speed:1000,
+
+
+      on: {
+        slideChange: function() {
+            setTimeout(function () {
+                swiper.params.mousewheel.releaseOnEdges = false;
+            }, 100);
+        },
+        reachEnd: function() {
+            setTimeout(function () {
+                swiper.params.mousewheel.releaseOnEdges = true;
+            }, 200);
+        }
     }, 
-    
-    /* freeMode: true, */
+  
 
+    
+
+ 
 
   
  
@@ -613,13 +627,9 @@ let swiperr = new Swiper('.cards',{
   
 
     //кол-во слайдов для показа 
-    slidesPerView: 'auto',
+    slidesPerView: '1',
 
-    //speed
-    speed: 1000,
-
-     //vertical
-    direction: 'vertical', 
+   
 
     effect: "cards",
     cardsEffect: {
@@ -632,11 +642,7 @@ let swiperr = new Swiper('.cards',{
         
       },
 
-      
-
-  
- 
-
+   
 
     //адаптивность
     breakpoints: {
@@ -658,31 +664,24 @@ let swiperr = new Swiper('.cards',{
 
 
 
+
+
+
+
+
+
+
     
 
      
-/*     on: {
-        slideChange: function() {
-            setTimeout(function () {
-                swiper.params.mousewheel.releaseOnEdges = false;
-            }, 500);
-        },
-        reachEnd: function() {
-            setTimeout(function () {
-                swiper.params.mousewheel.releaseOnEdges = true;
-            }, 750);
-        }
-    }, */
+  
 
     
 });
 
-let slblock = document.querySelector('.cards');
-slblock.addEventListener("mouseenter" , function (e){
-    cards.params.autoplay.disableOnInteraction = false;
-    cards.params.autoplay.delay = 500;
-    cards.params.autoplay.start();
-});
+
+
+
 
 
 
