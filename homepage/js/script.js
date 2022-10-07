@@ -1,3 +1,6 @@
+
+
+/*  */
 new Swiper('.crd',{
     //стрелки
    slidesPerView: '4',
@@ -277,6 +280,38 @@ $(window).on('load resize',windowSize); */
 
  */
 
+document.querySelector('#newoverlay').onclick = function(){
+    document.querySelector('.overlay-two').classList.add('open-overlay');
+    
+
+}
+
+
+document.querySelector('#close-overlay').onclick = function(){
+    document.querySelector('.overlay-two').classList.remove('open-overlay');
+    
+
+}
+
+document.querySelector('#hdtwo').onclick = function(){
+    document.querySelector('.overlay-two').classList.add('open-overlay');
+    
+
+}
+
+/* document.querySelector('#hdthree').onclick = function(){
+    document.querySelector('.overlay-two').classList.add('open-overlay');
+    
+
+} */
+
+/*  */
+
+
+
+/*  */
+
+
 const iconMenu = document.querySelector('.menu__icon');
 if (iconMenu){
     const navigation = document.querySelector('.navigation-menu');
@@ -325,6 +360,8 @@ document.querySelector('.tel-menu-four').onclick = function(){
 
 
 /*  */
+
+
 
 
 
@@ -555,129 +592,9 @@ new Swiper('.mygg',{
 
 /*  */
 
-var swiperr = new Swiper('.swiper-container',{
-    //стрелки
-
-
-    mousewheel: {
-        releaseOnEdges:true ,
-        sensitivity: 1 ,
-      },
-      direction: 'vertical',
-
-      /* mousewheel: true, */
-
-      speed:1000,
-
-
-      on: {
-        slideChange: function() {
-            setTimeout(function () {
-                swiper.params.mousewheel.releaseOnEdges = false;
-            }, 100);
-        },
-        reachEnd: function() {
-            setTimeout(function () {
-                swiper.params.mousewheel.releaseOnEdges = true;
-            }, 200);
-        }
-    }, 
-  
-
-    
-
- 
-
-  
- 
-
-    // включение и отключение
-    // перетаскивания на pc
-    simulateTouch: false,
-    //чувствительность свайпа
-    touchRatio: 3,
-    //угол срабатывания свайпа
-    touchAngle: 90,
-    //курсор перетаскиваня
-    grabCursor: false,
-    //переключение на слайд при клике на него
-    slideToClickedSlide: true,
-    allowTouchMove: true,
-    /* allowTouchMove: false, */
-
-  
-
-
-    //управление клаваой
-    keyboard: {
-        enabled: true,
-        onlyInViewport: true,
-        pageUpDown: true,
-    },
-
-    spaceBetween: 30,
-
-    //управление мышью
-
-    
-
-   
-
-  
-  
-
-    //кол-во слайдов для показа 
-    slidesPerView: '1',
-
-   
-
-    effect: "cards",
-    cardsEffect: {
-        perSlideOffset: 10 , 
-
-        perSlideRotate: 0,
-        rotate: true ,
-
-        
-        
-      },
-
-   
-
-    //адаптивность
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-        },
-        480: {
-            slidesPerView: 1,
-
-                  //автопрокрутка
-       
-            
-            
-        },
-        1024: {
-            slidesPerView: 1,
-        }
-    },
 
 
 
-
-
-
-
-
-
-
-    
-
-     
-  
-
-    
-});
 
 
 
@@ -900,9 +817,136 @@ document.querySelector('#overlay-close').onclick = function(){
     
     }
 
+
+    
+
  
 
 
 
     /*  */
+
+
+
+
+
+    var swiper = new Swiper('.swiper-container',{
+        //стрелки
+    
+    
+        mousewheel: {
+            releaseOnEdges:true ,
+            sensitivity: 1 ,
+          },
+          direction: 'vertical',
+    
+          /* mousewheel: true, */
+    
+          speed:1000,
+    
+    
+          on: {
+            slideChange: function() {
+                setTimeout(function () {
+                    swiper.params.mousewheel.releaseOnEdges = false;
+                }, 500);
+            },
+            reachEnd: function() {
+                setTimeout(function () {
+                    swiper.params.mousewheel.releaseOnEdges = true;
+                }, 1000);
+            }
+        }, 
+      
+    
+        
+    
+     
+    
+      
+     
+    
+        // включение и отключение
+        // перетаскивания на pc
+        simulateTouch: false,
+        //чувствительность свайпа
+        touchRatio: 3,
+        //угол срабатывания свайпа
+        touchAngle: 90,
+        //курсор перетаскиваня
+        grabCursor: false,
+        //переключение на слайд при клике на него
+        slideToClickedSlide: true,
+        allowTouchMove: true,
+        /* allowTouchMove: false, */
+    
+      
+    
+    
+        //управление клаваой
+        keyboard: {
+            enabled: true,
+            onlyInViewport: true,
+            pageUpDown: true,
+        },
+    
+        spaceBetween: 30,
+    
+        //управление мышью
+    
+        
+    
+       
+    
+      
+      
+    
+        //кол-во слайдов для показа 
+        slidesPerView: '1',
+    
+       
+    
+        effect: "cards",
+        cardsEffect: {
+            perSlideOffset: 10 , 
+    
+            perSlideRotate: 0,
+            rotate: true ,
+    
+            
+            
+          },
+    
+       
+    
+        //адаптивность
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            480: {
+                slidesPerView: 1,
+    
+                      //автопрокрутка
+           
+                
+                
+            },
+            1024: {
+                slidesPerView: 1,
+            }
+        },
+    
+    
+        
+    });
+
+   /*  productSwiper.swiper; */
+    
+    
+    
+    
+    
   
+
+   

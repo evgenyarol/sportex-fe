@@ -724,8 +724,8 @@ body{
     opacity: 1;
   }
 
-  /* .overlay-two{
-    position: fixed;
+  .overlay-two{
+      position: fixed;
     left: 0;
     top: 0;
     width: 100%;
@@ -735,82 +735,144 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    visibility: hidden;
+    opacity: 0;
     transition: 0.8s;
     @include onlylarge(1024px){
       padding-left: 0px;
       padding-right: 0px;
      }
-     
-     .info-card{
+
+     .blocks-info{
+
       @include onlylarge(512px){
         width: 100%;
-        justify-content: start;
-        align-items: flex-start;
-        padding-left: 20px;
-        padding-right: 20px;
-
-
-        
+        padding-left: 15px;
+        padding-right: 15px;
        }
 
-       .infor{
+      .info-one{
         background: #FFFFFF;
-        border-width: 2px 2px 0px 2px;
-        border-style: solid;
-        border-color: blue;
-        border-radius: 50px 0px;
-        width: 462px;
-        height: auto;
+        border: 2px solid #0A34D2;
+        border-radius: 50px 0px; 
+        width: 375px;
+        height: 462px;
+
         @include onlylarge(512px){
           width: 100%;
-         } 
+         }
 
-
-         .up-info{
+        .up-info{
           display: flex;
           justify-content: center;
-        
-          h4{
-           font-family: 'Montserrat';
-           font-style: normal;
-           font-weight: 700;
-           font-size: 20px;
-           line-height: 30px;
-           color: #0A0A0B; 
-           padding-top: 20px;
-           @include onlylarge(512px){
-             font-size: 18px;
+          padding-top: 24px;
+          h3{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 150%;
+            font-family: 'Montserrat';  
+            position: absolute;
+          }
+
+          .images{
+            position: relative;
+            left: 43%;
+            top: -12px;
+            cursor: pointer;
+          }
+        }
+
+
+        form{
+          .second{
+            display: flex;
+            flex-direction: column;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 26px;
+            .txt{
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 150%; 
+              font-family: 'Montserrat';  
             }
+
+            .cast{
+              border: 1px solid #E5E5E5;
+              border-radius: 14px;
+              padding-top: 12px;
+              padding-bottom: 12px; 
+              padding-left: 16px;
+              padding-right: 16px;
+              margin-top: 4px;
+             
+            }
+
+            .bg1{
+
+              background-image: url(../images/Mail.svg);
+              background-repeat: no-repeat;
+              background-position: 97% 51%;
+
+            }
+
+
+            .bg1:focus{
+              background-image: url(../images/mail-blue.svg); 
+              border: 2px solid #0A34D2;
+            }
+
+           
+
+            .bg2{
+              padding-bottom: 64px;
+            }
+
+
+          
+
+
            
           }
 
-         .images-close{
-           position: relative;
-           left: 13%;
-          
-           padding-top: 16px;
-           cursor: pointer;
-           @include onlylarge(450px){
-             left: 10%;
+          .butt{
+            display: flex;
+            justify-content: center;
+            button{
+              width: 229px;
+              background: #C0C2C8;
+              border-radius: 14px; 
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 150%;
+              color: #FFFFFF; 
+              border: none;
+              padding-top: 12px;
+              padding-bottom: 12px;
+              margin-top: 61px;
+              transition: 0.8s;
+              cursor: pointer;
             }
 
-            @include onlylarge(402px){
-             left: 8%;
+            button:hover{
+              background: #0A34D2;
             }
-            @include onlylarge(377px){
-             left: 6%;
-            }
-         }
-       }
+          }
+        }
       }
-
-
- 
      }
 
      
+ 
   }
- */
+
+  .overlay-two.open-overlay{
+    visibility: visible;
+    opacity: 1; 
+  }
+
+  
+
   
   .second-menu{
     /* position: fixed;
