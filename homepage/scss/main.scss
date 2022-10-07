@@ -199,7 +199,7 @@ body{
     padding-left: 24px;
     padding-right: 24px;
     position: relative;
-    /* z-index: 5; */
+    z-index: 50;
 
     @include onlylarge(1024px){
       padding-left: 15px;
