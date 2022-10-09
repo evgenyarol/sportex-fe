@@ -947,11 +947,18 @@ document.querySelector('#overlay-close').onclick = function(){
         breakpoints: {
             320: {
                 slidesPerView: 1,
+              
+
+             
             },
             480: {
                 slidesPerView: 1,
+
+             
+
+
     
-                      //автопрокрутка
+                    
            
                 
                 
