@@ -930,18 +930,8 @@ document.querySelector('#overlay-close').onclick = function(){
     
         //кол-во слайдов для показа 
         slidesPerView: '1',
-
-        effect: 'coverflow',
-        coverflowEffect: {
-          rotate: 0,
-          slideShadows: true,
-
-          depth:300,
-          stretch:450,
-        },
     
        
-    /* 
         effect: "cards",
         cardsEffect: {
             perSlideOffset: 10 , 
@@ -953,7 +943,7 @@ document.querySelector('#overlay-close').onclick = function(){
             
           },
 
- */       
+       
         
     
         //адаптивность
