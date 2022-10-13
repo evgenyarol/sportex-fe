@@ -970,11 +970,11 @@ document.querySelector('#overlay-close').onclick = function(){
   /*   swiper.on("touchStart", event => {
         startMoveEvent = event;
       }); */
-      swiper.on("reachEnd", event => {
+      swiper.on("slideChange", event => {
         swiper.allowTouchMove = false;
       });
 
-      swiper.on("doubleTap", event => {
+      swiper.on("tap", event => {
         swiper.allowTouchMove = true;
       });
 
