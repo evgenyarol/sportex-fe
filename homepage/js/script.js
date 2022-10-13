@@ -906,7 +906,7 @@ document.querySelector('#overlay-close').onclick = function(){
         //переключение на слайд при клике на него
         slideToClickedSlide: true,
         /* allowTouchMove: true, */
-        allowTouchMove: false,
+       /*  allowTouchMove: false, */
     
       
     
@@ -970,10 +970,10 @@ document.querySelector('#overlay-close').onclick = function(){
   /*   swiper.on("touchStart", event => {
         startMoveEvent = event;
       }); */
-    /*   swiper.on("reachBeginning", event => {
+    swiper.on("slideNextTransitionStart", event => {
         swiper.allowTouchMove = false;
       });
- */
+ 
       swiper.on("tap", event => {
         swiper.allowTouchMove = true;
       });
