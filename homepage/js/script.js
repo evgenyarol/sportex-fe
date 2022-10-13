@@ -874,6 +874,7 @@ document.querySelector('#overlay-close').onclick = function(){
                 setTimeout(function () {
                     swiper.params.mousewheel.releaseOnEdges = true;
                 }, 1000);
+                
             },
 
           },  
@@ -904,7 +905,7 @@ document.querySelector('#overlay-close').onclick = function(){
         grabCursor: false,
         //переключение на слайд при клике на него
         slideToClickedSlide: true,
-        /* allowTouchMove: true, */
+        allowTouchMove: true,
         /* allowTouchMove: false, */
     
       
@@ -930,9 +931,9 @@ document.querySelector('#overlay-close').onclick = function(){
     
         //кол-во слайдов для показа 
         slidesPerView: '1',
-    
+
        
-        effect: "cards",
+         effect: "cards",
         cardsEffect: {
             perSlideOffset: 10 , 
     
@@ -965,6 +966,20 @@ document.querySelector('#overlay-close').onclick = function(){
     
         
     });
+
+  /*   swiper.on("touchStart", event => {
+        startMoveEvent = event;
+      }); */
+      swiper.on("reachEnd", event => {
+        swiper.allowTouchMove = false;
+      });
+
+      swiper.on("doubleTap", event => {
+        swiper.allowTouchMove = true;
+      });
+
+
+      
 
    /*  productSwiper.swiper; */
     
