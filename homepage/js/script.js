@@ -861,7 +861,7 @@ document.querySelector('#overlay-close').onclick = function(){
     
           speed:1000,
 
-          watchOverflow: true ,
+        /*   watchOverflow: true , */
     
     
           on: {
@@ -874,8 +874,13 @@ document.querySelector('#overlay-close').onclick = function(){
                 setTimeout(function () {
                     swiper.params.mousewheel.releaseOnEdges = true;
                 }, 1000);
-            }
-        },  
+            },
+
+          },  
+
+         loop:false,
+ 
+
  
 
        
@@ -899,7 +904,7 @@ document.querySelector('#overlay-close').onclick = function(){
         grabCursor: false,
         //переключение на слайд при клике на него
         slideToClickedSlide: true,
-        allowTouchMove: true,
+        /* allowTouchMove: true, */
         /* allowTouchMove: false, */
     
       
@@ -925,9 +930,18 @@ document.querySelector('#overlay-close').onclick = function(){
     
         //кол-во слайдов для показа 
         slidesPerView: '1',
+
+        effect: 'coverflow',
+        coverflowEffect: {
+          rotate: 0,
+          slideShadows: true,
+
+          depth:300,
+          stretch:450,
+        },
     
        
-    
+    /* 
         effect: "cards",
         cardsEffect: {
             perSlideOffset: 10 , 
@@ -939,9 +953,8 @@ document.querySelector('#overlay-close').onclick = function(){
             
           },
 
-          
-    
-       
+ */       
+        
     
         //адаптивность
         breakpoints: {
@@ -953,15 +966,6 @@ document.querySelector('#overlay-close').onclick = function(){
             },
             480: {
                 slidesPerView: 1,
-
-             
-
-
-    
-                    
-           
-                
-                
             },
             1024: {
                 slidesPerView: 1,

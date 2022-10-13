@@ -11,3 +11,11 @@
     font-style: normal;
     src: local("Grtsk Tera"), url(./GrtskTera-Semibold.woff);
 }
+
+@font-face{
+   
+    font-family: 'Grtsk Giga';  
+    font-weight: 600;
+    font-style: normal;
+    src: local("Grtsk Giga"), url(./GrtskGiga-Semibold.woff);
+}

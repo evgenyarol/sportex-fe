@@ -223,7 +223,7 @@ body {
   padding-left: 24px;
   padding-right: 24px;
   position: relative;
-  z-index: 50;
+  z-index: 30;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -506,7 +506,7 @@ body {
   }
 }
 
-.container-one .overlay .info-card .infor .up-info {
+.container-one .overlay .info-card .infor .upper .up-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,7 +515,7 @@ body {
           justify-content: center;
 }
 
-.container-one .overlay .info-card .infor .up-info h4 {
+.container-one .overlay .info-card .infor .upper .up-info h4 {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -526,34 +526,42 @@ body {
 }
 
 @media only screen and (max-width: 512px) {
-  .container-one .overlay .info-card .infor .up-info h4 {
+  .container-one .overlay .info-card .infor .upper .up-info h4 {
     font-size: 18px;
   }
 }
 
-.container-one .overlay .info-card .infor .up-info .images-close {
+.container-one .overlay .info-card .infor .upper .images-close {
   position: relative;
-  left: 13%;
-  padding-top: 16px;
+  width: 18px;
   cursor: pointer;
+  left: 91%;
+  top: -31px;
 }
 
-@media only screen and (max-width: 450px) {
-  .container-one .overlay .info-card .infor .up-info .images-close {
-    left: 10%;
-  }
+.container-one .overlay .info-card .infor .upper .images-close .bb {
+  width: 100%;
+  height: 2px;
+  background-color: #E5E5E5;
+  border-radius: 3px;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-@media only screen and (max-width: 402px) {
-  .container-one .overlay .info-card .infor .up-info .images-close {
-    left: 8%;
-  }
+.container-one .overlay .info-card .infor .upper .images-close .bb:nth-child(2) {
+  opacity: 0;
 }
 
-@media only screen and (max-width: 377px) {
-  .container-one .overlay .info-card .infor .up-info .images-close {
-    left: 6%;
-  }
+.container-one .overlay .info-card .infor .upper .images-close .bb:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 4px;
+}
+
+.container-one .overlay .info-card .infor .upper .images-close .bb:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .container-one .overlay .info-card .infor .pgg {
@@ -729,6 +737,7 @@ body {
   -webkit-transition: 0.8s;
   transition: 0.8s;
   cursor: pointer;
+  font-family: 'Grtsk Giga';
 }
 
 .container-one .overlay .info-card .infor form .butt button:hover {
@@ -757,17 +766,6 @@ body {
 
 .container-one .overlay .info-card .infor-four {
   display: none;
-}
-
-.container-one .overlay .info-card .infor-four .one-img .txt-otp {
-  position: absolute;
-}
-
-.container-one .overlay .info-card .infor-four .one-img .images-close {
-  left: 43%;
-  /*  @include onlylarge(512px){
-              left: 43%;
-            } */
 }
 
 @media only screen and (max-width: 512px) {
@@ -812,6 +810,11 @@ body {
   .container-one .overlay .info-card .infor-four form .second .cast {
     width: 100%;
   }
+}
+
+.container-one .overlay .info-card .infor-four form .second .cast:focus {
+  outline: 0;
+  border: 1px solid #3861FB;
 }
 
 .container-one .overlay .info-card .infor-four form .second .txt {
@@ -886,7 +889,7 @@ body {
   }
 }
 
-.container-one .overlay-two .blocks-info .info-one .up-info {
+.container-one .overlay-two .blocks-info .info-one .upper .up-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -896,19 +899,44 @@ body {
   padding-top: 24px;
 }
 
-.container-one .overlay-two .blocks-info .info-one .up-info h3 {
+.container-one .overlay-two .blocks-info .info-one .upper .up-info h3 {
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
   font-family: 'Montserrat';
-  position: absolute;
 }
 
-.container-one .overlay-two .blocks-info .info-one .up-info .images {
+.container-one .overlay-two .blocks-info .info-one .upper .images {
   position: relative;
-  left: 43%;
-  top: -12px;
   cursor: pointer;
+  left: 91%;
+  top: -31px;
+  width: 18px;
+}
+
+.container-one .overlay-two .blocks-info .info-one .upper .images .burger-line {
+  width: 100%;
+  height: 2px;
+  background-color: #E5E5E5;
+  border-radius: 3px;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container-one .overlay-two .blocks-info .info-one .upper .images .burger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.container-one .overlay-two .blocks-info .info-one .upper .images .burger-line:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 4px;
+}
+
+.container-one .overlay-two .blocks-info .info-one .upper .images .burger-line:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .container-one .overlay-two .blocks-info .info-one form .second {
@@ -939,6 +967,11 @@ body {
   padding-left: 16px;
   padding-right: 16px;
   margin-top: 4px;
+}
+
+.container-one .overlay-two .blocks-info .info-one form .second .cast:focus {
+  outline: 0;
+  border: 1px solid #3861FB;
 }
 
 .container-one .overlay-two .blocks-info .info-one form .second .bg1 {
@@ -980,6 +1013,7 @@ body {
   -webkit-transition: 0.8s;
   transition: 0.8s;
   cursor: pointer;
+  font-family: 'Grtsk Giga';
 }
 
 .container-one .overlay-two .blocks-info .info-one form .butt button:hover {
@@ -1677,6 +1711,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .container-one .what-is-sport form {
+    width: 100%;
+  }
+}
+
 .container-one .what-is-sport form button {
   font-family: 'Grtsk Tera';
   border: 2px solid #0A0A0B;
@@ -1698,37 +1738,24 @@ body {
   cursor: pointer;
   -webkit-transition: 0.8s;
   transition: 0.8s;
+  background-image: url(../images/people-icon.svg);
+  background-repeat: no-repeat;
+  background-position-x: 101%;
+  background-position-y: -2px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .container-one .what-is-sport form button {
     width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
-}
-
-.container-one .what-is-sport form button .pic {
-  padding-left: 105px;
-}
-
-@media only screen and (max-width: 400px) {
-  .container-one .what-is-sport form button .pic {
-    padding-left: 0px;
-    position: relative;
-    left: 3%;
-  }
-}
-
-.container-one .what-is-sport form button .pic img {
-  width: 52px;
-  height: 52px;
-  vertical-align: bottom;
 }
 
 .container-one .what-is-sport form button:hover {
   background: #0A0A0B;
+  background-image: url(../images/people-icon.svg);
+  background-repeat: no-repeat;
+  background-position-x: 101%;
+  background-position-y: -2px;
 }
 
 /* container-two */
@@ -2029,6 +2056,18 @@ body {
   -webkit-text-stroke: 3px #0A0A0B;
 }
 
+@media only screen and (max-width: 768px) {
+  .container-three .mygg .mygg-two .mygg-three h1 span {
+    -webkit-text-stroke: 2px #0A0A0B;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container-three .mygg .mygg-two .mygg-three h1 span {
+    -webkit-text-stroke: 1.5px #0A0A0B;
+  }
+}
+
 /* container-four */
 .container-four {
   padding-top: 180px;
@@ -2241,10 +2280,10 @@ body {
     display: block;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
-    -webkit-column-gap: 10px;
-            column-gap: 10px;
+    -ms-grid-columns: 48.5% 48.5%;
+        grid-template-columns: 48.5% 48.5%;
+    -webkit-column-gap: 3%;
+            column-gap: 3%;
     row-gap: 10px;
     margin-top: 24px;
     -webkit-box-pack: center;
@@ -2394,6 +2433,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .container-four .back-one .down-info .any-buttons form {
+    width: 100%;
+  }
+}
+
 .container-four .back-one .down-info .any-buttons form button {
   font-family: 'Grtsk Tera';
   border: 2px solid #0A0A0B;
@@ -2415,65 +2460,71 @@ body {
   cursor: pointer;
   -webkit-transition: 0.8s;
   transition: 0.8s;
+  background-image: url(../images/people-icon.svg);
+  background-repeat: no-repeat;
+  background-position-x: 101%;
+  background-position-y: -2px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 450px) {
   .container-four .back-one .down-info .any-buttons form button {
-    width: 345px;
+    width: 100%;
   }
-}
-
-@media only screen and (max-width: 400px) {
-  .container-four .back-one .down-info .any-buttons form button {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-.container-four .back-one .down-info .any-buttons form button .pic {
-  padding-left: 105px;
-}
-
-@media only screen and (max-width: 1024px) {
-  .container-four .back-one .down-info .any-buttons form button .pic {
-    padding-left: 98px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .container-four .back-one .down-info .any-buttons form button .pic {
-    padding-left: 0px;
-    position: relative;
-    left: 4%;
-  }
-}
-
-.container-four .back-one .down-info .any-buttons form button .pic img {
-  width: 52px;
-  height: 52px;
-  vertical-align: bottom;
 }
 
 .container-four .back-one .down-info .any-buttons form button:hover {
   background-color: #0A0A0B;
+  background-image: url(../images/people-icon.svg);
 }
 
-.container-four .back-one .down-info .any-buttons form .but-two {
-  background: #FFFFFF;
-  color: #0A0A0B;
-  margin-left: 26px;
-}
-
-@media only screen and (max-width: 1024px) {
-  .container-four .back-one .down-info .any-buttons form .but-two {
-    margin-left: 0px;
-    margin-top: 20px;
+@media only screen and (max-width: 450px) {
+  .container-four .back-one .down-info .any-buttons .dada {
+    width: 100%;
   }
 }
 
-.container-four .back-one .down-info .any-buttons form button:hover {
-  color: #FFFFFF;
+@media only screen and (max-width: 450px) {
+  .container-four .back-one .down-info .any-buttons .dada .another {
+    width: 100%;
+  }
+}
+
+.container-four .back-one .down-info .any-buttons .dada .another .but-two {
+  background: #FFFFFF;
+  color: #0A0A0B;
+  margin-left: 26px;
+  background-image: url(../images/str.svg);
+  background-repeat: no-repeat;
+  background-position-x: 101%;
+  background-position-y: -2px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container-four .back-one .down-info .any-buttons .dada .another .but-two {
+    margin-left: 0px;
+    margin-top: 20px;
+    background-image: url(../images/word.svg);
+    color: #3861FB;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container-four .back-one .down-info .any-buttons .dada .another .but-two {
+    width: 100%;
+  }
+}
+
+.container-four .back-one .down-info .any-buttons .dada .another button:hover {
+  background-image: url(../images/str.svg);
+  background-repeat: no-repeat;
+  background-position-x: 101%;
+  background-position-y: -2px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container-four .back-one .down-info .any-buttons .dada .another button:hover {
+    background-image: url(../images/word.svg);
+  }
 }
 
 .container-four .back-one .down-info .any-buttons a {
@@ -3132,6 +3183,12 @@ body {
           justify-content: center;
 }
 
+@media only screen and (max-width: 450px) {
+  .container-seven .some-txt form {
+    width: 100%;
+  }
+}
+
 .container-seven .some-txt form button {
   font-family: 'Grtsk Tera';
   background: #3861FB;
@@ -3153,49 +3210,24 @@ body {
   cursor: pointer;
   -webkit-transition: 0.8s;
   transition: 0.8s;
+  background-image: url(../images/people-icon.svg);
+  background-repeat: no-repeat;
+  background-position-x: 101%;
+  background-position-y: -2px;
 }
 
-@media only screen and (max-width: 464px) {
-  .container-seven .some-txt form button {
-    width: 345px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .container-seven .some-txt form button {
     width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
-}
-
-.container-seven .some-txt form button .pic {
-  padding-left: 105px;
-}
-
-@media only screen and (max-width: 464px) {
-  .container-seven .some-txt form button .pic {
-    padding-left: 97px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .container-seven .some-txt form button .pic {
-    padding-left: 0px;
-    position: relative;
-    left: 3%;
-  }
-}
-
-.container-seven .some-txt form button .pic img {
-  vertical-align: bottom;
-  width: 52px;
-  height: 52px;
 }
 
 .container-seven .some-txt form button:hover {
   background: #0A0A0B;
+  background-image: url(../images/people-icon.svg);
+  background-repeat: no-repeat;
+  background-position-x: 101%;
+  background-position-y: -2px;
 }
 
 /* container-eight */
@@ -3553,7 +3585,7 @@ footer .all-info .social-media .three-block .nn-one {
 footer .all-info .social-media .third-block {
   border: 2px solid #FFFFFF;
   background-position: center;
-  border-radius: 0px;
+  border-radius: 0px 0px 50px 0px;
   width: 348px;
   padding-top: 38px;
   padding-bottom: 37px;
@@ -4323,5 +4355,10 @@ footer .all-info .social-media .third-block:hover a .blue-pictures {
 .swiper-wrapper {
   -webkit-transition-timing-function: linear !important;
   transition-timing-function: linear !important;
+}
+
+.container-eight .back-one .ambs-card .right-side .txt-three {
+  padding-left: 0px;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
