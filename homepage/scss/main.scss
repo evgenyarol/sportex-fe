@@ -504,6 +504,7 @@ body{
             padding-left: 16px;
             display: flex;
             margin-bottom: 16px;
+            cursor: pointer;
             @include onlylarge(512px){
              margin-left: 0px;
              margin-right: 0px;
