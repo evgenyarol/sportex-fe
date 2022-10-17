@@ -115,6 +115,8 @@ body{
   position: relative;
   z-index: 10;
 
+  top: 0;
+
   @include onlylarge(1400px){
    background-size: 115%;
   }
@@ -1605,6 +1607,8 @@ body{
           transition: 0.8s;
           cursor: pointer;
           border-bottom: 2px solid  #3861FB;
+          position: absolute;
+          z-index: 3;
 
           @include onlylarge(1500px){
            width: 330px;
@@ -1663,15 +1667,27 @@ body{
           
           } 
 
-          .nubmer-two.activee{
-            opacity: 1;
+          .number-three{
+            background-color: #0A34D2;
           }
+
+          .number-three.infoanim{
+            background-color: red;
+          }
+
+
+          
 
           .nubmer-one{
             position: absolute;
             transition: 0.8s; 
           }
          }
+
+
+         
+
+
   
           .txt-info{
             .descr{
@@ -1731,12 +1747,108 @@ body{
   
         }
 
+
+        .one-side.heplanim{
+          border: 2px solid #3861FB;
+          border-radius: 50px 0px; 
+        }
+
+        
+
+        .back-side{
+          height: 300px;
+          padding-left: 10px;
+          padding-right: 10px;
+          transition: 0.8s;
+          cursor: pointer;
+          border: 2px solid #3861FB;
+          border-radius: 50px 0px; 
+          opacity: 0;
+          visibility: hidden;
+          z-index: 12;
+          position: relative;
+          background-color: #0A0A0B;
+
+          @include onlylarge(1500px){
+           width: 330px;
+          }
+
+          @include onlylarge(1259px){
+            width: 300px;
+           }
+          
+          @include onlylarge(767px){
+            width: 256px;
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+ 
+          h3{
+            color: transparent;
+            /* прозрачный цвет букв */
+            -webkit-text-stroke: 1px #FFFFFF;
+            font-size: 40px;
+            line-height: 140%;  
+            padding-left: 10px;
+            transition: 0.8s;
+            padding-top: 10px;
+            @include onlylarge(1115px){
+              padding-left: 10px;
+             
+              
+            } 
+
+            @include onlylarge(767px){
+              padding-left: 0px;
+              padding-right: 0px;
+              
+            } 
+           
+          }
+
+          .txt-info-one{
+            font-family: 'Montserrat'; 
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 140%; 
+            color: #FFFFFF;  
+            padding-top: 20px;       
+            padding-left: 10px; 
+            padding-right: 30px; 
+            padding-bottom: 59px;  
+            width: 273px;
+            transition: 0.8s;
+          
+            @include onlylarge(1115px){
+              padding-left: 10px;
+              padding-right: 15px;
+              
+            }
+            @include onlylarge(767px){
+              width: 100%;
+              font-size: 15px; 
+              padding-left: 0px;
+              padding-right: 0px;
+
+            } 
+          }
+        }
+
+
+        .back-side.newtry{
+         opacity: 1;
+         visibility: visible;
+        }
+
         
         
 
         
        
       }
+
+
+      
 
        .one-side:hover .numbers .nubmer-two{
 
@@ -2032,7 +2144,7 @@ body{
             width: 100%; 
             border-radius: 50px; 
             z-index: 5;    
-            display: none;
+            display: block;
             @include onlylarge(1024px){
   
               border-radius: 50px 0px;
@@ -2052,6 +2164,7 @@ body{
             cursor: pointer;
             position: relative;
             z-index: 13;
+            display: none;
           }
         }
   
@@ -2315,6 +2428,7 @@ body{
         height: 670px;
         width: 600px; 
         margin-top: 80px;
+        display: none;
       }  
   
       @include onlylarge(700px){
@@ -2533,6 +2647,114 @@ body{
       }
      } 
   }
+
+  .cards-mobile{
+    margin-top: 60px;
+    display: none;
+    @include onlylarge(1024px){
+      display: block;
+    }  
+    .cards-two-mobile{
+      padding-bottom: 50px;
+      .card-block-mobile{
+        .correct{
+          display: grid;
+          grid-template-columns: 100%;
+          height: 670px;
+          border: 2px solid #0A0A0B;
+          border-radius: 50px 0px; 
+          /* border: 2px solid #0A0A0B;
+          border-radius: 50px 0px;   */
+          .left-side{
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 16px;
+            order: 2;
+            h2{
+              font-weight: 700;
+                font-size: 25px;
+                line-height: 140%; 
+                width: 350px;
+            }
+  
+            .descr-txt{
+              font-family: 'Montserrat';
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 140%;
+              color: #0A0A0B; 
+              padding-top: 10px;
+            }
+  
+            .spisok{
+              padding-left: 18px;
+               padding-top: 16px;
+              .android{
+                list-style-type: disc;
+                li{
+                  font-family: 'Montserrat';
+                  font-weight: 600;
+                  font-size: 14px;
+                  line-height: 205%; 
+                  color: #0A0A0B;  
+                  
+                             
+                }
+  
+                li::marker{
+                  width: 12px;
+                  color: #0A34D2;
+                  height: 12px;
+                }
+              }
+            }
+  
+            .descr-txt-two{
+              font-family: 'Grtsk Giga';
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 120%; 
+              padding-top: 44px;
+              padding-bottom: 24px;
+            }
+
+            .num-four{
+              padding-top: 179px;
+            }
+
+            .num-three{
+              padding-top: 139px;
+            }
+
+            .num-two{
+              padding-top: 39px;
+            }
+          }
+  
+          .right-side-mobile{
+            order: 1;
+            height: 260px;
+            img{
+              width: 100%;
+              height: 100%;
+              max-width: 100%;
+              object-fit: cover;
+              border-radius: 50px 0px 0px 0px; 
+            }
+
+            .pic-twi{
+              object-position: 8px 6px;
+              @include onlylarge(500px){
+                object-position: 11px 6px;
+              }  
+            }
+  
+          }
+  
+        }
+      }
+    }
+  }
  }
 
  /* container-six  */
@@ -2616,6 +2838,7 @@ body{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            cursor: pointer;
             h3{
               font-family: 'Montserrat'; 
               font-weight: 600;
@@ -2665,12 +2888,12 @@ body{
         }
   
        .all-four-two{
-        border-radius: 0px 0px 0px 24px;
+        border-radius: 0px 0px 24px 0px;
   
         }
   
         .all-two{
-          border-radius: 0px 24px 0px 0px;
+          border-radius: 24px 0px 0px 0px;
    
         }
   
@@ -3310,7 +3533,8 @@ body{
        }   
        
        .six-block{
-        border: 1px solid #FFFFFF;
+        border-top: 1px solid #FFFFFF;
+        border-left: 1px solid #FFFFFF;
         border-radius: 50px 0px 0px 0px;
         width: 348px; 
         padding-top: 38px;
@@ -3351,13 +3575,23 @@ body{
       }
 
       .six-block:hover{
-        border: 1px solid #3861FB; 
-        transform: scale(74%);
+        border-left:1px solid #3861FB;
+        border-top: 1px solid #3861FB;
+      }
+
+      .six-block:hover +  .seven-block{
+        border-left: 1px solid #3861FB;
+      }
+
+      .six-block:hover ~ .eight-block{
+        border-top: 1px solid #3861FB;
       }
       /*  */
 
       .seven-block {
-        border: 1px solid #FFFFFF;
+        border-top: 1px solid #FFFFFF;
+        border-left: 1px solid #FFFFFF;
+        border-right: 1px solid #FFFFFF;
 
         border-radius: none;
         width: 348px; 
@@ -3408,14 +3642,21 @@ body{
       }
 
       .seven-block:hover{
-        border: 1px solid #0A34D2;
-        transform: scale(74%);
+        border-top: 1px solid #0A34D2;
+        border-right: 1px solid #0A34D2;
+        border-left: 1px solid #0A34D2;
+      }
+
+      .seven-block:hover ~ .nine-block{
+        border-top:  1px solid #0A34D2;
       }
 
       /*  */
 
       .eight-block{
-        border: 1px solid #FFFFFF;
+        border-top: 1px solid #FFFFFF;
+        border-left: 1px solid #FFFFFF;
+        border-bottom: 1px solid #FFFFFF;
        
         border-radius: none;
         width: 348px; 
@@ -3458,7 +3699,10 @@ body{
 
       .eight-block:hover{
         border: 1px solid #0A34D2;
-        transform: scale(74%);
+      }
+
+      .eight-block:hover + .nine-block{
+        border-left: 1px solid #0A34D2;
       }
       /*  */
 
@@ -3533,12 +3777,13 @@ body{
 
       .nine-block:hover{
         border: 1px solid #0A34D2;
-        transform: scale(74%);
         background-image: url(../images/in-blue.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 25px 25px;
       }
+
+     
     }
 
    
@@ -3881,3 +4126,5 @@ footer .all-info .social-media .secondblock:hover a .white-pictures{
   padding-left: 0px;
   text-align: center;
 }
+
+

@@ -624,15 +624,23 @@ new Swiper('.mygg',{
 
 
 
-
+/* 
 document.querySelector('#plus1').onclick = function(){
+    document.querySelector('#info1').classList.toggle('answer-hide');
+    document.querySelector('#plus1').classList.toggle('close');
+    document.querySelector('#colorh').classList.toggle('color');
+} */
+
+document.querySelector('#plus11').onclick = function(){
     document.querySelector('#info1').classList.toggle('answer-hide');
     document.querySelector('#plus1').classList.toggle('close');
     document.querySelector('#colorh').classList.toggle('color');
 }
 
+
+
 /* 2 */
-document.querySelector('#plus2').onclick = function(){
+document.querySelector('#plus33').onclick = function(){
     document.querySelector('#info2').classList.toggle('answer-hide');
     document.querySelector('#plus2').classList.toggle('close');
     document.querySelector('#colorh1').classList.toggle('color');
@@ -640,7 +648,7 @@ document.querySelector('#plus2').onclick = function(){
 
 /* 3 */
 
-document.querySelector('#plus3').onclick = function(){
+document.querySelector('#plus22').onclick = function(){
     document.querySelector('#info3').classList.toggle('answer-hide');
     document.querySelector('#plus3').classList.toggle('close');
     document.querySelector('#colorh2').classList.toggle('color');
@@ -648,7 +656,7 @@ document.querySelector('#plus3').onclick = function(){
 
 /* 4 */
 
-document.querySelector('#plus4').onclick = function(){
+document.querySelector('#plus44').onclick = function(){
     document.querySelector('#info4').classList.toggle('answer-hide');
     document.querySelector('#plus4').classList.toggle('close');
     document.querySelector('#colorh3').classList.toggle('color');
@@ -656,7 +664,7 @@ document.querySelector('#plus4').onclick = function(){
 
 /* 5 */
 
-document.querySelector('#plus5').onclick = function(){
+document.querySelector('#plus55').onclick = function(){
     document.querySelector('#info5').classList.toggle('answer-hide');
     document.querySelector('#plus5').classList.toggle('close');
     document.querySelector('#colorh4').classList.toggle('color');
@@ -664,7 +672,7 @@ document.querySelector('#plus5').onclick = function(){
 
 /* 6 */
 
-document.querySelector('#plus6').onclick = function(){
+document.querySelector('#plus66').onclick = function(){
     document.querySelector('#info6').classList.toggle('answer-hide');
     document.querySelector('#plus6').classList.toggle('close');
     document.querySelector('#colorh5').classList.toggle('color');
@@ -686,7 +694,7 @@ new Swiper('.ambs-one',{
    },
    slidesPerView: '1',
    loop: true,
-    spaceBetween: 80,   
+    spaceBetween: 10,   
    centeredSlides: true,
    keyboard: {
        enabled: true,
@@ -855,7 +863,7 @@ document.querySelector('#overlay-close').onclick = function(){
             releaseOnEdges:true ,
             sensitivity: 1 ,
           },
-          direction: 'vertical',
+         /*  direction: 'vertical', */
     
           /* mousewheel: true, */
     
@@ -880,19 +888,7 @@ document.querySelector('#overlay-close').onclick = function(){
           },  
 
          loop:false,
- 
 
- 
-
-       
-      
-    
-        
-    
-     
-    
-      
-     
     
         // включение и отключение
         // перетаскивания на pc
@@ -905,9 +901,12 @@ document.querySelector('#overlay-close').onclick = function(){
         grabCursor: false,
         //переключение на слайд при клике на него
        /*  slideToClickedSlide: true, */
-        /* allowTouchMove: true, */
-        allowTouchMove: false,
-    
+        allowTouchMove: true,
+       /*  allowTouchMove: false,
+     */
+
+       effect: "cards",
+
       
     
     
@@ -926,15 +925,15 @@ document.querySelector('#overlay-close').onclick = function(){
     
        
     
-      
+        /* */
       
     
         //кол-во слайдов для показа 
         slidesPerView: '1',
 
        
-         effect: "cards",
-        cardsEffect: {
+         /* effect: "cards", */
+        /* cardsEffect: {
             perSlideOffset: 10 , 
     
             perSlideRotate: 0,
@@ -942,7 +941,7 @@ document.querySelector('#overlay-close').onclick = function(){
     
             
             
-          },
+          }, */
 
        
         
@@ -951,15 +950,23 @@ document.querySelector('#overlay-close').onclick = function(){
         breakpoints: {
             320: {
                 slidesPerView: 1,
-              
+                direction: 'horizontal',
 
              
             },
-            480: {
+
+            1025: {
                 slidesPerView: 1,
-            },
-            1024: {
-                slidesPerView: 1,
+                direction: 'vertical',
+                  cardsEffect: {
+                    perSlideOffset: 10 , 
+    
+                     perSlideRotate: 0,
+                       rotate: false ,
+    
+            
+                }, 
+ 
             }
         },
     
@@ -970,24 +977,92 @@ document.querySelector('#overlay-close').onclick = function(){
   /*   swiper.on("touchStart", event => {
         startMoveEvent = event;
       }); */
-    swiper.on("slideChange", event => {
+    /* swiper.on("slideChange", event => {
         swiper.allowTouchMove = false;
       });
  
       swiper.on("tap", event => {
         swiper.allowTouchMove = true;
       });
-
+ */
 
       
 
    /*  productSwiper.swiper; */
     
     
-    
-    
-    
-  
+   $(document).ready(function() {
+    var loops = 2 * 1;
+    function removeAddClass() {
+        $(".back-side").toggleClass("newtry");
+        $(".first-side").toggleClass("heplanim");
+        if (--loops > 0)
+             setTimeout(removeAddClass, 3500);
+    }
+    removeAddClass();
+});
 
-   
+
+
+
+/*  */
+
+
+new Swiper('.cards-mobile',{
+    //стрелки
+   slidesPerView: '1',
+   loop: true,
+   spaceBetween: 30,   
+   keyboard: {
+       enabled: true,
+       onlyInViewport: true,
+       pageUpDown: true,
+   },
+
+   speed: 1000,
+
+    //управление мышью
+    mousewheel: {
+        sensitivity: 1,
+        //класс объекта на котором будет отрабатываться
+        /* eventsTarget: ".image-slider" */
+    },
+
+   scrollbar: {
+       el: '.swiper-scrollbar',
+       //возможность пертаскивать скрол
+       draggable: true
+   },
+
+   pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+
+   breakpoints: {
+       320: {
+           slidesPerView: 1,
+       },
+       480: {
+           slidesPerView: 1,
+       },
+       992: {
+           slidesPerView: 1,
+       },
+
+       1300: {
+           slidesPerView: 1,
+       }
+   },
+
+});
+
+
+  /* swiper.on("sliderMove", event => {
+        swiper.allowTouchMove = true;
+      });
+
+ */
+
     
+
