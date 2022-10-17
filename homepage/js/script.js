@@ -1037,6 +1037,7 @@ new Swiper('.cards-mobile',{
    pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
+    clickable: true,
   },
 
    breakpoints: {
