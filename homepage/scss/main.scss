@@ -2888,12 +2888,19 @@ body{
         }
   
        .all-four-two{
-        border-radius: 0px 0px 24px 0px;
+        border-radius: 0px 0px 0px 24px;
+        @include onlylarge(1024px){
+          border-radius: 0px 0px 24px 0px;
+         }   
+        
   
         }
   
         .all-two{
-          border-radius: 24px 0px 0px 0px;
+          border-radius: 0px 24px 0px 0px;
+          @include onlylarge(1024px){
+            border-radius: 24px 0px 0px 0px;
+           }   
    
         }
   

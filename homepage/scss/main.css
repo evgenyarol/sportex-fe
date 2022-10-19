@@ -3296,11 +3296,23 @@ body {
 }
 
 .container-six .back-one .questions .left-side .all-four-two {
-  border-radius: 0px 0px 24px 0px;
+  border-radius: 0px 0px 0px 24px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container-six .back-one .questions .left-side .all-four-two {
+    border-radius: 0px 0px 24px 0px;
+  }
 }
 
 .container-six .back-one .questions .left-side .all-two {
-  border-radius: 24px 0px 0px 0px;
+  border-radius: 0px 24px 0px 0px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container-six .back-one .questions .left-side .all-two {
+    border-radius: 24px 0px 0px 0px;
+  }
 }
 
 .container-six .back-one .questions .right-side {
