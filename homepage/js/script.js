@@ -697,7 +697,7 @@ new Swiper('.ambs-one',{
    slidesPerView: '1',
    loop: true,
     spaceBetween: 10,   
-   centeredSlides: true,
+   /* centeredSlides: true, */
    keyboard: {
        enabled: true,
        onlyInViewport: true,
@@ -737,7 +737,7 @@ new Swiper('.ambs-one',{
     },
  */
 
-    speed: 800 ,
+    speed: 1300 ,
 
     breakpoints: {
         320: {
