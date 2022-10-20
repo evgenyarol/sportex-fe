@@ -983,13 +983,7 @@ document.querySelector('#overlay-close').onclick = function(){
     });
 
 
-    $('.swiper-wrapper').on('mouseover', function() {
-        swiper.mousewheel.enable();
-      }); 
-
-      $('.swiper-wrapper').on('mouseout', function() {
-        swiper.mousewheel.disable();
-      }); 
+  
 
   /*   swiper.on("touchStart", event => {
         startMoveEvent = event;
