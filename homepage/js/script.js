@@ -1056,14 +1056,15 @@ document.querySelector('#overlay-close').onclick = function(){
 
 
 
-    
-    window.onscroll = function () { // отслеживаем скролл
-        var z = document.body.scrollTop; // Получаем высоту передвигаемого сролла
-        var pixels = 300; // Указываем количество пикселей
-        if (z > pixels){
-            console.log("Прокручено на 200px") // Для демонстрации вывод сообщения. У себя меняете на выполнение Вашей функции.
+    $(window).scroll(function() {
+        var height = $(window).scrollTop();
+         /*Если сделали скролл на 100px задаём новый класс для header*/
+        if(height > 2300){
+            swiper.mousewheel.enable();
+        } else{
+            swiper.mousewheel.disable();
         }
-    }
+        });
 
   
 
