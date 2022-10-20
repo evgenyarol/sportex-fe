@@ -352,8 +352,8 @@ body {
   position: fixed;
   width: 100%;
   z-index: 17;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.55s;
+  transition: 0.55s;
   top: -200%;
 }
 

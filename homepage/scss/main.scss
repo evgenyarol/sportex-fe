@@ -309,7 +309,7 @@ body{
       position: fixed;
       width: 100%;
       z-index: 17;
-      transition: 0.75s;
+      transition: 0.55s;
       top: -200%;
       @include onlylarge(1600px){
         padding-left: 0px;
