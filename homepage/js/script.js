@@ -862,13 +862,12 @@ document.querySelector('#overlay-close').onclick = function(){
     
     
         mousewheel: {
-            releaseOnEdges:true ,
+          /*   releaseOnEdges:true , */
             sensitivity: 1 ,
           },
          /*  direction: 'vertical', */
     
-          /* mousewheel: true, */
-    
+         
           speed:1000,
 
         /*   watchOverflow: true , */
@@ -982,6 +981,15 @@ document.querySelector('#overlay-close').onclick = function(){
     
         
     });
+
+
+    $('.swiper-wrapper').on('mouseover', function() {
+        swiper.mousewheel.enable();
+      }); 
+
+      $('.swiper-wrapper').on('mouseout', function() {
+        swiper.mousewheel.disable();
+      }); 
 
   /*   swiper.on("touchStart", event => {
         startMoveEvent = event;
