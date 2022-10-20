@@ -181,6 +181,8 @@ let header = document.querySelector('.js-header');
 
      headerHH = document.querySelector('.js-header-two').clientHeight;
 
+
+
     
 document.onscroll = function () {
     let scroll = window.scrollY;
@@ -885,6 +887,13 @@ document.querySelector('#overlay-close').onclick = function(){
                 
             },
 
+            reachBeginning: function() {
+                setTimeout(function () {
+                    swiper.params.mousewheel.releaseOnEdges = true;
+                }, 1000);
+                
+            },
+
           },  
 
          loop:false,
@@ -977,15 +986,12 @@ document.querySelector('#overlay-close').onclick = function(){
   /*   swiper.on("touchStart", event => {
         startMoveEvent = event;
       }); */
-    /* swiper.on("slideChange", event => {
-        swiper.allowTouchMove = false;
-      });
- 
-      swiper.on("tap", event => {
-        swiper.allowTouchMove = true;
-      });
- */
 
+     /*  swiper.on("reachBeginning", event => {
+        swiper.params.mousewheel.releaseOnEdges = true;
+      });
+    */
+    
       
 
    /*  productSwiper.swiper; */
@@ -1059,11 +1065,43 @@ new Swiper('.cards-mobile',{
 });
 
 
-  /* swiper.on("sliderMove", event => {
-        swiper.allowTouchMove = true;
-      });
+  
 
- */
+
+
+     
+ 
+    
+
 
     
 
+
+/* lang mobile */
+
+
+
+document.querySelector('#firstlang').onclick = function(){
+    document.querySelector('.more-lang').classList.toggle('langinfo');
+    document.querySelector('.more-langtwo').classList.toggle('langinfotwo');
+
+}
+
+
+document.querySelector('#formylang').onclick = function(){
+    document.querySelector('.langueges').classList.toggle('opas');
+    document.querySelector('.langueges2').classList.toggle('opas2');
+
+}
+
+document.querySelector('#blacklang').onclick = function(){
+    document.querySelector('.langitlackmenu').classList.toggle('newone');
+    document.querySelector('.langEnglackmenu').classList.toggle('newone2');
+
+}
+
+document.querySelector('#onemorespisok').onclick = function(){
+    document.querySelector('.firstspisok').classList.toggle('etoon');
+    document.querySelector('.secondspisok').classList.toggle('ett');
+
+}
