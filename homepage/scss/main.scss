@@ -309,7 +309,7 @@ body{
       position: fixed;
       width: 100%;
       z-index: 17;
-      transition: 0.55s;
+      transition: 0.75s;
       top: -200%;
       @include onlylarge(1600px){
         padding-left: 0px;
@@ -1057,6 +1057,7 @@ body{
       max-width: 1920px;
       width: 100%;
       position: fixed;
+      top: 0;
       /* position: relative; */
 
       @include onlylarge(1024px){
@@ -1181,7 +1182,7 @@ body{
         position: fixed;
         width: 100%;
         z-index: 20;
-        transition: 0.75s;
+        transition: 1s;
         top: -300%;
         @include onlylarge(1600px){
           padding-left: 0px;
@@ -1343,7 +1344,8 @@ body{
     .header.fixed{
       position: fixed; 
       opacity: 1;
-      transform: translate(0px, -53px);
+     /*  transform: translate(0px, -53px); */
+      top: 0;
       width: 100%;
        
     }

@@ -11,7 +11,7 @@ new Swiper('.crd',{
        pageUpDown: true,
    },
 
-   loop: true ,
+  /*  loop: true , */
 
      //чувствительность свайпа
      touchRatio: 1,
@@ -32,29 +32,7 @@ new Swiper('.crd',{
    }, */
 
 
-   pagination: {
-    el: '.swiper-pagination',
-
-    clickable: true,
-   /*  //булеты
-    clickable: true,
-    // динамические булеты
-    dynamicBullets: true,
-    //кастомные булеты
-    renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + '</span>';
-    }, */
-    //фракция
-    /* type: 'fraction', */
-    // кастомный вывод фракции
-   /*  renderFraction: function (currentClass, totalClass) {
-        return 'Photo <span class="' + currentClass + '"></span>' +
-        ' iz ' +
-        '<span class="' + totalClass + '"></span>';
-    }, */
-    /* //progrssbar
-    type: 'progressbar' */
- }, 
+  
 
 
    breakpoints: {
@@ -62,11 +40,23 @@ new Swiper('.crd',{
      320: {
            slidesPerView: 1.19,
            spaceBetween: 10, 
+           pagination: {
+            el: '.swiper-pagination',
+        
+            clickable: true,
+
+         }, 
            
        },
 
        407 : {
            slidesPerView: 1.3,
+           pagination: {
+            el: '.swiper-pagination',
+        
+            clickable: true,
+
+         }, 
 
             
            
@@ -76,11 +66,23 @@ new Swiper('.crd',{
 
        488: {
            slidesPerView: 1.5,
+           pagination: {
+            el: '.swiper-pagination',
+        
+            clickable: true,
+
+         }, 
        },
 
 
        600: {
         slidesPerView: 1.8,
+        pagination: {
+            el: '.swiper-pagination',
+        
+            clickable: true,
+
+         }, 
        },
 
 
@@ -88,6 +90,12 @@ new Swiper('.crd',{
 
        646: {
         slidesPerView: 2,
+        pagination: {
+            el: '.swiper-pagination',
+        
+            clickable: true,
+
+         }, 
        },
 
 
@@ -95,6 +103,12 @@ new Swiper('.crd',{
 
        710: {
         slidesPerView: 2.2,
+        pagination: {
+            el: '.swiper-pagination',
+        
+            clickable: true,
+
+         }, 
        },
 
 
@@ -105,36 +119,78 @@ new Swiper('.crd',{
 
        768: {
         slidesPerView: 2.15,
+        pagination: {
+            el: '.swiper-pagination',
+        
+            clickable: true,
+
+         }, 
        },
 
        822: {
         slidesPerView: 2.3,
+        pagination: {
+            el: '.swiper-pagination',
+        
+            clickable: true,
+
+         }, 
        },
 
        902: {
         slidesPerView: 2.5,
+        pagination: {
+            el: '.swiper-pagination',
+        
+            clickable: true,
+
+         }, 
        },
 
        1012: {
         slidesPerView: 2.8,
         spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+        
+            clickable: true,
+
+         }, 
        },
 
 
        1100: {
         slidesPerView: 3,
         spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+        
+            clickable: true,
+
+         }, 
        },
 
        
        1250: {
            slidesPerView: 3.2,
            spaceBetween:  30,
+           pagination: {
+            el: '.swiper-pagination',
+        
+            clickable: true,
+
+         }, 
            
        },
        1400: {
            slidesPerView: 3.3,
            spaceBetween:  0, 
+           pagination: {
+            el: '.swiper-pagination',
+        
+            clickable: true,
+
+         }, 
            
        },
 
@@ -180,6 +236,7 @@ let header = document.querySelector('.js-header');
      headertwo = document.querySelector('.js-header-two');
 
      headerHH = document.querySelector('.js-header-two').clientHeight;
+     
 
 
 
@@ -229,6 +286,10 @@ document.onscroll = function () {
             document.body.style.paddingTop = headerH + 'px';
         } 
     }
+
+
+
+
 
 
    
@@ -864,7 +925,11 @@ document.querySelector('#overlay-close').onclick = function(){
         mousewheel: {
           /*   releaseOnEdges:true , */
             sensitivity: 1 ,
+
+            
           },
+
+          /* mousewheel: false, */
          /*  direction: 'vertical', */
     
          
@@ -893,9 +958,17 @@ document.querySelector('#overlay-close').onclick = function(){
                 
             },
 
+           
+
+
+           
+          
+
           },  
 
          loop:false,
+
+         centeredSlides: true,
 
     
         // включение и отключение
@@ -930,7 +1003,6 @@ document.querySelector('#overlay-close').onclick = function(){
         //управление мышью
     
         
-    
        
     
         /* */
@@ -982,6 +1054,16 @@ document.querySelector('#overlay-close').onclick = function(){
         
     });
 
+
+
+    
+    window.onscroll = function () { // отслеживаем скролл
+        var z = document.body.scrollTop; // Получаем высоту передвигаемого сролла
+        var pixels = 300; // Указываем количество пикселей
+        if (z > pixels){
+            console.log("Прокручено на 200px") // Для демонстрации вывод сообщения. У себя меняете на выполнение Вашей функции.
+        }
+    }
 
   
 

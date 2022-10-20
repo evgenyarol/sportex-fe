@@ -352,8 +352,8 @@ body {
   position: fixed;
   width: 100%;
   z-index: 17;
-  -webkit-transition: 0.55s;
-  transition: 0.55s;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
   top: -200%;
 }
 
@@ -1162,6 +1162,7 @@ body {
   max-width: 1920px;
   width: 100%;
   position: fixed;
+  top: 0;
   /* position: relative; */
 }
 
@@ -1290,8 +1291,8 @@ body {
   position: fixed;
   width: 100%;
   z-index: 20;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 1s;
+  transition: 1s;
   top: -300%;
 }
 
@@ -1490,8 +1491,8 @@ body {
 .container-one .second-menu .header.fixed {
   position: fixed;
   opacity: 1;
-  -webkit-transform: translate(0px, -53px);
-          transform: translate(0px, -53px);
+  /*  transform: translate(0px, -53px); */
+  top: 0;
   width: 100%;
 }
 
