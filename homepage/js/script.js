@@ -923,10 +923,10 @@ document.querySelector('#overlay-close').onclick = function(){
     
     
         mousewheel: {
-          /*   releaseOnEdges:true , */
+          /*  releaseOnEdges:true ,  */ 
             sensitivity: 1 ,
 
-            
+             /* thresholdDelta:100,   */
           },
 
           /* mousewheel: false, */
@@ -955,6 +955,8 @@ document.querySelector('#overlay-close').onclick = function(){
                 setTimeout(function () {
                     swiper.params.mousewheel.releaseOnEdges = true;
                 }, 1000);
+
+                
                 
             },
 
@@ -987,6 +989,8 @@ document.querySelector('#overlay-close').onclick = function(){
      */
 
        effect: "cards",
+
+     
 
       
     
@@ -1058,19 +1062,19 @@ document.querySelector('#overlay-close').onclick = function(){
 
     $(window).scroll(function() {
         var height = $(window).scrollTop();
-         /*Если сделали скролл на 100px задаём новый класс для header*/
-        if(height > 2300){
-            swiper.mousewheel.enable();
+         
+        if(height > 2450){
+
+           /*  window.addEventListener('scroll', () => swiper.mousewheel.enable()); */
+          
+           swiper.mousewheel.disable()
         } else{
-            swiper.mousewheel.disable();
+           
         }
         });
 
   
-
-  /*   swiper.on("touchStart", event => {
-        startMoveEvent = event;
-      }); */
+    
 
      /*  swiper.on("reachBeginning", event => {
         swiper.params.mousewheel.releaseOnEdges = true;
