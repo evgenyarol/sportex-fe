@@ -1063,15 +1063,31 @@ document.querySelector('#overlay-close').onclick = function(){
     $(window).scroll(function() {
         var height = $(window).scrollTop();
          
-        if(height > 2450){
+        if(height >= 2300){
 
-           /*  window.addEventListener('scroll', () => swiper.mousewheel.enable()); */
-          
+            /* window.addEventListener('scroll', () => swiper.mousewheel.disable()()); */
+           /* console.log("ewqeqw"); */
            swiper.mousewheel.disable()
+        } 
+
+        if(height >= 2600){
+
+            /* window.addEventListener('scroll', () => swiper.mousewheel.disable()()); */
+           /* console.log("ewqeqw"); */
+           swiper.mousewheel.enable()
         } else{
-           
+            swiper.mousewheel.disable()
         }
-        });
+
+        if(height >= 2700){
+
+           swiper.mousewheel.disable()
+        } 
+       
+    });
+
+
+   
 
   
     
