@@ -942,7 +942,7 @@ document.querySelector('#overlay-close').onclick = function(){
             slideChange: function() {
                 setTimeout(function () {
                     swiper.params.mousewheel.releaseOnEdges = false;
-                }, 500);
+                }, 700);
             },
             reachEnd: function() {
                 setTimeout(function () {
@@ -1061,7 +1061,7 @@ document.querySelector('#overlay-close').onclick = function(){
 
 
     $(window).scroll(function() {
-        var height = $(window).scrollTop();
+        let height = $(window).scrollTop();
          
 
         if(height <= 2650  ){
