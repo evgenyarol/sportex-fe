@@ -1376,6 +1376,7 @@ body{
               display: none;
             }
           }
+        
         }
 
         .langitlackmenu{
@@ -1397,6 +1398,10 @@ body{
             li{
               a{
                 color: #0A0A0B;
+                transition: 0.8s;
+              }
+              a:hover{
+                color: #0A34D2;
               }
             }
 

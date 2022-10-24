@@ -1538,6 +1538,12 @@ body {
 
 .container-one .second-menu .header.header-white nav .second li a {
   color: #0A0A0B;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.container-one .second-menu .header.header-white nav .second li a:hover {
+  color: #0A34D2;
 }
 
 .container-one .second-menu .header.header-white nav .menu-close {
