@@ -942,7 +942,7 @@ document.querySelector('#overlay-close').onclick = function(){
             slideChange: function() {
                 setTimeout(function () {
                     swiper.params.mousewheel.releaseOnEdges = false;
-                }, 700);
+                }, 800);
             },
             reachEnd: function() {
                 setTimeout(function () {
