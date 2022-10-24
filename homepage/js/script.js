@@ -1063,19 +1063,25 @@ document.querySelector('#overlay-close').onclick = function(){
     $(window).scroll(function() {
         var height = $(window).scrollTop();
          
-     
-        if(height >= 2600  ){
-           swiper.mousewheel.enable()
-        } else{
-            swiper.mousewheel.disable()
-        }
 
-        if(height >= 2850  ){
+        if(height <= 2650  ){
             swiper.mousewheel.disable()
-         } 
+         } else{
+            swiper.mousewheel.enable()
+         }
+
+         if ( height >= 2850){
+            swiper.mousewheel.disable()
+         }
+     
+       
+
+       
+     
        
        
     });
+
 
 
 
