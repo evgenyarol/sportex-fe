@@ -798,7 +798,7 @@ new Swiper('.ambs-one',{
     },
  */
 
-    speed: 1300 ,
+    speed: 1000 ,
 
     breakpoints: {
         320: {

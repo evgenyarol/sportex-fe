@@ -2830,6 +2830,8 @@ body {
   background-repeat: no-repeat;
   background-position-x: 101%;
   background-position-y: -2px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -2852,11 +2854,14 @@ body {
   background-repeat: no-repeat;
   background-position-x: 101%;
   background-position-y: -2px;
+  background-color: #0A0A0B;
+  color: #FFFFFF;
 }
 
 @media only screen and (max-width: 1024px) {
   .container-four .back-one .down-info .any-buttons .dada .another button:hover {
     background-image: url(../images/word.svg);
+    background-color: #0A0A0B;
   }
 }
 

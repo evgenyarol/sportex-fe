@@ -2589,6 +2589,7 @@ body{
             background-repeat: no-repeat;
             background-position-x: 101%;
             background-position-y: -2px;
+            transition: 0.8s;
             @include onlylarge(1024px){
               margin-left: 0px;
               margin-top: 20px;
@@ -2606,8 +2607,11 @@ body{
             background-repeat: no-repeat;
             background-position-x: 101%;
             background-position-y: -2px;
+            background-color: #0A0A0B;
+            color: #FFFFFF;
             @include onlylarge(1024px){
               background-image: url(../images/word.svg);
+              background-color: #0A0A0B;
             }   
           }
         }
