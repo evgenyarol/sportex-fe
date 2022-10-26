@@ -2932,10 +2932,9 @@ body {
 }
 
 .container-five .back-one .cards {
-  padding-top: 80px;
   position: relative;
-  z-index: 4;
-  margin-top: 5vh;
+  z-index: 3;
+  margin-bottom: 0px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -2954,14 +2953,15 @@ body {
   -webkit-column-gap: 55px;
           column-gap: 55px;
   padding-left: 51px;
+  height: 580px;
   width: auto;
   background-color: #FFFFFF;
+  bottom: 18vh;
+  z-index: 3;
+  margin-top: 7vh;
+  margin-bottom: -4vh;
   position: -webkit-sticky;
   position: sticky;
-  bottom: 29vh;
-  z-index: 4;
-  margin-top: -3vh;
-  margin-bottom: -4vh;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -3076,7 +3076,7 @@ body {
 
 @media only screen and (max-width: 1500px) {
   .container-five .back-one .cards .cards-two .card-block .left-side .descr-txt-two {
-    padding-top: 32px;
+    padding-top: 11px;
   }
 }
 
@@ -3134,22 +3134,16 @@ body {
 }
 
 .container-five .back-one .cards .cards-two .card-block-two {
-  bottom: 9vh;
-  z-index: 3;
+  bottom: 12vh;
+  z-index: 2;
   margin-top: 7vh;
-  margin-bottom: -15vh;
+  margin-bottom: -11vh;
   position: -webkit-sticky;
   position: sticky;
 }
 
 .container-five .back-one .cards .cards-two .card-block-two .left-side .descr-txt-two {
-  padding-top: 39px;
-}
-
-@media only screen and (max-width: 1500px) {
-  .container-five .back-one .cards .cards-two .card-block-two .left-side .descr-txt-two {
-    padding-top: 16px;
-  }
+  padding-top: 52px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -3183,16 +3177,16 @@ body {
 }
 
 .container-five .back-one .cards .cards-two .card-block-three {
-  bottom: -1vh;
-  z-index: 2;
-  margin-top: 18vh;
-  margin-bottom: 2vh;
+  bottom: 5vh;
+  z-index: 1;
+  margin-top: 14vh;
+  margin-bottom: -18vh;
   position: -webkit-sticky;
   position: sticky;
 }
 
 .container-five .back-one .cards .cards-two .card-block-three .left-side .descr-txt-two {
-  padding-top: 123px;
+  padding-top: 141px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -3208,15 +3202,15 @@ body {
 }
 
 .container-five .back-one .cards .cards-two .card-block-four {
-  bottom: -7vh;
-  z-index: 1;
-  margin-top: 0vh;
+  bottom: -3vh;
+  z-index: 0;
+  margin-top: 21vh;
   position: -webkit-sticky;
   position: sticky;
 }
 
 .container-five .back-one .cards .cards-two .card-block-four .left-side .descr-txt-two {
-  padding-top: 151px;
+  padding-top: 165px;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -3320,6 +3314,12 @@ body {
   line-height: 120%;
   padding-top: 44px;
   padding-bottom: 24px;
+}
+
+@media only screen and (max-width: 392px) {
+  .container-five .cards-mobile .cards-two-mobile .card-block-mobile .correct .left-side .nneon {
+    padding-top: 24px;
+  }
 }
 
 .container-five .cards-mobile .cards-two-mobile .card-block-mobile .correct .left-side .num-four {
