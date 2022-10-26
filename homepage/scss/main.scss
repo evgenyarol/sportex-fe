@@ -2981,6 +2981,10 @@ body{
               @include onlylarge(392px){
                 padding-top: 24px;
               }  
+
+              @include onlylarge(370px){
+                padding-top: 14px;
+              }  
             }
 
             .num-four{

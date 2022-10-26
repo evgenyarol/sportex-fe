@@ -3322,6 +3322,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 370px) {
+  .container-five .cards-mobile .cards-two-mobile .card-block-mobile .correct .left-side .nneon {
+    padding-top: 14px;
+  }
+}
+
 .container-five .cards-mobile .cards-two-mobile .card-block-mobile .correct .left-side .num-four {
   padding-top: 179px;
 }
