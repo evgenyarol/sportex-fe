@@ -265,7 +265,7 @@ document.onscroll = function () {
 
     }
 
-    if (scroll > headerH + 5295 ) {
+    if (scroll > headerH + 7120 ) {
         header.classList.remove('header-white');
         document.body.style.paddingTop = headerH + 'px';
     }
@@ -988,8 +988,7 @@ document.querySelector('#overlay-close').onclick = function(){
        /*  allowTouchMove: false,
      */
 
-       effect: "cards",
-
+       
      
 
       
@@ -1070,9 +1069,7 @@ document.querySelector('#overlay-close').onclick = function(){
             swiper.mousewheel.enable()
          }
 
-         if ( height >= 2850){
-            swiper.mousewheel.disable()
-         }
+      
      
        
 

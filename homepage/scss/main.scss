@@ -2635,9 +2635,9 @@ body{
     padding-bottom: 140px;
   }  
   .back-one{
-    /* @include onlylarge(1500px){
+    @include onlylarge(1500px){
       width: 95%;
-    }   */
+    }  
     .txt{
       display: flex;
       justify-content: center;
@@ -2670,66 +2670,36 @@ body{
      }
   
      .cards{
-      margin-top: 80px;
-      height: 580px; 
+       padding-top: 80px;
+      position: relative;
+      z-index: 4;
+      margin-top: 5vh;
+
       @include onlylarge(1024px){
-        height: 670px;
-        width: 600px; 
-        margin-top: 80px;
-        display: none;
-      }  
-  
-      @include onlylarge(700px){
-        width: 100%;
-      }  
+         display: none;
+       }  
+    
       
       .cards-two{
-        width: 100%;
-        display: flex;
-        align-items: center;
         .card-block{
           border: 2px solid #0A0A0B;
-          width: 1392px;
           border-radius: 50px 0px; 
           display: grid;
           grid-template-columns: 600px 686px;
           column-gap: 55px;
           padding-left: 51px; 
-          /* width: auto; */
+          width: auto;
           background-color: #FFFFFF;
-          @include onlylarge(1501px){
-            display: flex;
-            justify-content: space-between;
-            width: 1280px;
-          } 
-          
-          @include onlylarge(1412px){
-            width: 1150px;
-          }  
-  
-          @include onlylarge(1300px){
-            padding-left: 35px;
-          }  
-
-          @include onlylarge(1276px){
-            width: 1050px;
-          }  
-
-          @include onlylarge(1165px){
-            width: 950px;
-          }  
-          @include onlylarge(1067px){
-            width: 900px;
-          }  
-          @include onlylarge(1024px){
-            flex-direction: column;
-            padding-left: 0px;
-            justify-content: start;
-            width: 600px;
-          }  
-          @include onlylarge(700px){
-            width: 100%;
-          }  
+          position: sticky;
+          bottom: 29vh;
+          z-index: 4;
+          margin-top: -3vh;
+          margin-bottom: -4vh; 
+          @include onlylarge(1500px){
+            grid-template-columns: 45% 45%;
+            column-gap: 10%; 
+           }  
+        
           .left-side{
             padding-top: 50px;
             @include onlylarge(1024px){
@@ -2854,6 +2824,11 @@ body{
         }
   
         .card-block-two{
+          bottom: 9vh;
+          z-index: 3;
+          margin-top: 7vh;
+          margin-bottom: -15vh; 
+          position: sticky;
           .left-side{
             .descr-txt-two{
               padding-top: 39px;
@@ -2872,16 +2847,27 @@ body{
                 padding-top:32px;
               }  
             }
+
+            .descr-txt{
+              @include onlylarge(1500px){
+                padding-top: 6px;
+              }  
+            }
   
             .spisok{
               @include onlylarge(1500px){
-                padding-top: 13px;
+                padding-top: 3px;
               }  
             }
           }
         }
   
         .card-block-three{
+          bottom: -1vh;
+          z-index: 2;
+          margin-top: 18vh;
+          margin-bottom: 2vh;
+          position: sticky; 
           .left-side{
             .descr-txt-two{
               padding-top: 123px;
@@ -2897,6 +2883,10 @@ body{
         } 
   
         .card-block-four{
+          bottom: -7vh;
+          z-index: 1;
+          margin-top: 0vh;
+          position: sticky; 
           .left-side{
             .descr-txt-two{
               padding-top: 151px;

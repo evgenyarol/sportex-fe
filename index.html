@@ -29,7 +29,7 @@
             <div class="black-txt"></div>
             <header>
                 <div class="images">
-                   <img src="./homepage/images/logotype-white.svg" alt="logotype"> 
+                   <img src="./homepage/images/newlogoone.svg" alt="logotype"> 
                 </div>
                 <ul>
                     <li class="more-lang" id="langone"><a>It</a></li>
@@ -331,8 +331,8 @@
             <div class="second-menu ">
                 <header class="header  js-header ">
                     <div class="images">
-                       <img class="img-one" src="./homepage/images/white-logo-last.svg" alt="logotype"> 
-                       <img class="imagestwo js-header-three" src="./homepage/images/blue-black.svg">
+                       <img class="img-one" src="./homepage/images/newlogoone.svg" alt="logotype"> 
+                       <img class="imagestwo js-header-three" src="./homepage/images/newlogotwo.svg"  alt="logotype">
                     </div>
                     <ul>
                         <li class="langitlackmenu"><a>It</a></li>
@@ -771,16 +771,16 @@
 
         <section class="container-five " >
             
-            <div class="back-one ">
+            <div class="back-one  center-two">
                 <div class="txt">
                     <h1  >Бесплатные решения 
                        <span> для членов сообщества</span></h1> 
                         
                 </div>
     
-                <div class="cards swiper-container ">
-                    <div class="cards-two swiper-wrapper">
-                        <div class="card-block swiper-slide">
+                <div class="cards  ">
+                    <div class="cards-two ">
+                        <div class="card-block " id="firstblock">
     
                             <div class="left-side">
                                 <h2>Мобильное приложение</h2>
@@ -812,7 +812,7 @@
     
                         <!--  -->
     
-                        <div class="card-block card-block-two swiper-slide card-tr-one">
+                        <div class="card-block card-block-two card-tr-one" id="secondblock">
     
                             <div class="left-side">
                                 <h2>CRM Система</h2>
@@ -843,7 +843,7 @@
                         <!--  -->
     
     
-                        <div class="card-block card-block-three swiper-slide">
+                        <div class="card-block card-block-three "  id="thirdblock">
     
                             <div class="left-side">
                                 <h2>E-commerce</h2>
@@ -871,7 +871,7 @@
     
                         <!--  -->
     
-                        <div class="card-block card-block-four swiper-slide">
+                        <div class="card-block card-block-four " id="fourthblock">
     
                             <div class="left-side">
                                 <h2>Web 3.0</h2>
@@ -1394,6 +1394,31 @@
     
 
      <script src="./homepage/js/script.js"></script>
+
+
+   <!--   <script>
+
+        $(function(){
+            /* Укажи id всех блоков через запятую, которым нужно добавить эффект наложения */
+            var id = '#firstblock,#secondblock,#thirdblock,#fourthblock';
+        
+            $('head').append('<style>body {overflow-x: hidden;}#allrecords {overflow: visible !important;}#t-header,#t-footer {position: relative;z-index: 2;} .t-rec {position: relative;z-index: 1;overflow-x: hidden;}'+id+' { position: -webkit-sticky; position: sticky; top: 0; z-index: 0;}</style>');
+            
+            $(window).on('load resize', function(){
+                $(id).each(function(){
+                    var topPosition = $(window).height() - $(this).height();
+                    if (topPosition < 0) {
+                        $(this).css('top',topPosition)
+                    } else {
+                        $(this).css('top',0)
+                    }
+
+                    
+                });
+            });
+        });
+        
+        </script> -->
     
 </body>
 </html>
