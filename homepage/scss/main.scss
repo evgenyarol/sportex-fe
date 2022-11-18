@@ -2187,43 +2187,47 @@ body{
           font-size: 100px;
           line-height: 120%; 
           color: #0A0A0B;
-  
-          @include onlylarge(1657px){
-            font-size: 80px;
-          }
-  
-          @include onlylarge(1228px){
-            font-size: 70px;
-          }
-  
-          @include onlylarge(993px){
-            font-size: 50px;
-          }
-  
-          @include onlylarge(734px){
-            font-size: 40px;
-          }
-  
-          @include onlylarge(530px){
-            font-size: 30px;
-          }
-  
-  
-          @include onlylarge(405px){
-            font-size: 28px;
-          }
-  
-  
-  
-  
-  
+          white-space: nowrap;
+
          
   
+           @include onlylarge(1763px){
+            font-size: 92px;
+          }
+
+          @include onlylarge(1526px){
+            font-size: 88px;
+          }
+
+
+          @include onlylarge(1492px){
+            font-size: 80px;
+          }
+
+          @include onlylarge(1165px){
+            font-size: 76px;
+          }
+
+          @include onlylarge(947px){
+            font-size: 70px;
+          }
+
+          @include onlylarge(867px){
+            font-size: 66px;
+          }
+
+
           
+          @include onlylarge(740px){
+            font-size: 72px;
+          }
+
   
   
   
   
+  
+
           
   
           span{
@@ -3382,6 +3386,7 @@ body{
         @include onlylarge(1024px){
           padding-left: 15px;
           padding-right: 15px;
+          height: 290px;
          }   
         h3{
           font-weight: 600;

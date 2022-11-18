@@ -487,12 +487,7 @@ new Swiper('.mygg',{
 
     //автопрокрутка
     autoplay: {
-        //пауза между прокруткой
-        /* delay:100, */
-        //закончить на последнем слайдк
-       /*  stopOnLastSlide: true, */
-        //откл после ручного переключениея
-/*         disableOnInteraction: false, */
+
         reverseDirection: true,
 
         delay: 1,
@@ -510,162 +505,120 @@ new Swiper('.mygg',{
 
    breakpoints: {
 
-
     300: {
-        slidesPerView: 1.3,
+        slidesPerView: 1.1,
+        spaceBetween:500,
+      },
 
-        spaceBetween: 20,
-       },
+    361: {
+        slidesPerView: 1.1,
+        spaceBetween:450,
+      },
 
+    413: {
+        slidesPerView: 1.1,
+        spaceBetween:400,
+      },
 
-    405: {
-        slidesPerView: 1.3,
+    455: {
+        slidesPerView: 1.1,
+        spaceBetween:350,
+      },
 
-        spaceBetween: 20,
-       },
-
-
-
-    434: {
-        slidesPerView: 1.4,
-
-        spaceBetween: 20,
-       },
-
-
-
-    467: {
-        slidesPerView: 1.5,
-
-        spaceBetween: 20,
-       },
+    510: {
+        slidesPerView: 1.1,
+        spaceBetween:300,
+      },
 
 
-     530: {
-        slidesPerView: 1.3,
+    560: {
+        slidesPerView: 1.1,
+        spaceBetween: 250,
+      },
 
-        spaceBetween: 20,
-       },
 
     
+    607: {
+        slidesPerView: 1.1,
+        spaceBetween: 200,
+      },
 
 
-     621: {
+    657: {
+        slidesPerView: 1.1,
+        spaceBetween: 150,
+      },
+
+
+    707: {
+        slidesPerView: 1.1,
+        spaceBetween: 100,
+      },
+
+
+
+    741: {
+        slidesPerView: 1.1,
+        spaceBetween: 10,
+      },
+
+
+
+
+
+
+    798: {
+        slidesPerView: 1.28,
+      },
+
+
+    823: {
+        slidesPerView: 1.31,
+      },
+
+
+    1033: {
+        slidesPerView: 1.41,
+      },
+
+
+
+    1107: {
         slidesPerView: 1.5,
+      },
 
-        spaceBetween: 30,
-       },
 
-       663: {
+     1256: {
         slidesPerView: 1.6,
-
-        spaceBetween: 30,
-       },
-
-       600: {
-        slidesPerView: 1.4,
-        spaceBetween: 40,
-       },
+      },
 
 
-       642: {
-        slidesPerView: 1.3,
-        spaceBetween: 50,
-       },
+     1351: {
+        slidesPerView: 1.72,
+      }, 
 
-       735: {
-        slidesPerView: 1.4,
-        spaceBetween: 40,
-
-       },
+      1421: {
+        slidesPerView: 1.8,
+      }, 
 
 
-       777: {
-        slidesPerView: 1.5,
-        spaceBetween: 40,
 
-       },
 
-        853: {
-        slidesPerView: 1.6,
+      1493: {
+           slidesPerView: 1.7,
+       }, 
 
-       },
 
-       897: {
-        slidesPerView: 1.7,
 
-       },
+
+        1638: {
+           slidesPerView: 1.8,
+       }, 
+
+
+   
 
      
-
-       995: {
-        slidesPerView: 1.3,
-        spaceBetween: 60,
-       },
-
-       1002: {
-        slidesPerView: 1.4,
-        spaceBetween: 40,
-       },
-
-       1080: {
-        slidesPerView: 1.5,
-        spaceBetween: 40,
-       },
-
-
-       1153: {
-        slidesPerView: 1.6,
-        spaceBetween: 40,
-       },
-       
-
-      
-
-       1228: {
-        slidesPerView: 1.5, 
-        spaceBetween: 40, 
-       }, 
-
-       1312: {
-        slidesPerView: 1.6, 
-        spaceBetween: 40, 
-       }, 
-
-       1424: {
-           slidesPerView: 1.7,
-
-       },
-
-
-        1501: {
-           slidesPerView: 1.7,
-
-       },
-
-        1513: {
-           slidesPerView: 1.8,
-
-       },
-
-        1601: {
-           slidesPerView: 1.9,
-
-       },
-
-         1657: {
-           slidesPerView: 1.6,
-
-       },
-
-        1766: {
-           slidesPerView: 1.65,
-       },
-
-       1875: {
-           slidesPerView: 1.8,
-       },
-       
    },
 
 });

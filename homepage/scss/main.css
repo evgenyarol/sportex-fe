@@ -2344,41 +2344,48 @@ body {
   font-size: 100px;
   line-height: 120%;
   color: #0A0A0B;
+  white-space: nowrap;
 }
 
-@media only screen and (max-width: 1657px) {
+@media only screen and (max-width: 1763px) {
+  .container-three .mygg .mygg-two .mygg-three h1 {
+    font-size: 92px;
+  }
+}
+
+@media only screen and (max-width: 1526px) {
+  .container-three .mygg .mygg-two .mygg-three h1 {
+    font-size: 88px;
+  }
+}
+
+@media only screen and (max-width: 1492px) {
   .container-three .mygg .mygg-two .mygg-three h1 {
     font-size: 80px;
   }
 }
 
-@media only screen and (max-width: 1228px) {
+@media only screen and (max-width: 1165px) {
+  .container-three .mygg .mygg-two .mygg-three h1 {
+    font-size: 76px;
+  }
+}
+
+@media only screen and (max-width: 947px) {
   .container-three .mygg .mygg-two .mygg-three h1 {
     font-size: 70px;
   }
 }
 
-@media only screen and (max-width: 993px) {
+@media only screen and (max-width: 867px) {
   .container-three .mygg .mygg-two .mygg-three h1 {
-    font-size: 50px;
+    font-size: 66px;
   }
 }
 
-@media only screen and (max-width: 734px) {
+@media only screen and (max-width: 740px) {
   .container-three .mygg .mygg-two .mygg-three h1 {
-    font-size: 40px;
-  }
-}
-
-@media only screen and (max-width: 530px) {
-  .container-three .mygg .mygg-two .mygg-three h1 {
-    font-size: 30px;
-  }
-}
-
-@media only screen and (max-width: 405px) {
-  .container-three .mygg .mygg-two .mygg-three h1 {
-    font-size: 28px;
+    font-size: 72px;
   }
 }
 
@@ -3791,6 +3798,7 @@ body {
   .container-eight .back-one .ambs-card .right-side {
     padding-left: 15px;
     padding-right: 15px;
+    height: 290px;
   }
 }
 
