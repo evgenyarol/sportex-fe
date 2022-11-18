@@ -5,31 +5,7 @@ new Swiper('.crd',{
     //стрелки
    slidesPerView: '4',
    spaceBetween:  30,   
-   keyboard: {
-       enabled: true,
-       onlyInViewport: true,
-       pageUpDown: true,
-   },
-
-  /*  loop: true , */
-
-     //чувствительность свайпа
-     touchRatio: 1,
-     //угол срабатывания свайпа
-     touchAngle: 90,
-
-
-  /*  scrollbar: {
-       el: '.swiper-scrollbar',
-       //возможность пертаскивать скрол
-       draggable: true
-   },
-   mousewheel: {
-       sensitivity: 1,
-       //класс объекта на котором будет отрабатываться
-      /*  eventsTarget: ".image-slider"  
-       
-   }, */
+   
 
 
   
